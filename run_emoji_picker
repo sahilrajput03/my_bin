@@ -1,0 +1,8 @@
+#Yikes, this all setup works nice.!!!!!(Note: if you want this program to search in further desktops too, specify them like below.., yikes!!)
+xdotool search --desktop 0 --classname emoji-picker windowactivate || \
+xdotool search --desktop 1 --classname emoji-picker windowactivate || \
+xdotool search --desktop 2 --classname emoji-picker windowactivate || \
+xdotool search --desktop 3 --classname emoji-picker windowactivate || \
+emoji-picker
+
+#Backup: xdotool search --classname emoji-picker windowactivate || emoji-picker
