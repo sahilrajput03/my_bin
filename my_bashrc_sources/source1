@@ -1,5 +1,6 @@
 # new:
 alias loginasroot='sudo -i'
+alias rmrf='rm -rf'
 # source: Diff b/w su and sudo: https://tinyurl.com/ybdz9n9y
 # ---
 alias sudo='sudo '
