@@ -1,0 +1,38 @@
+YIKES#############Solved this issue by simly completely shutting down windows first, yikes!!./dev/
+
+##NOW NAUTILUS automatically mount these drives in rw(read-only) mode, ealier it mounting in ro(i.e., read-write mode only).
+
+
+sda1 => /media/array/Windows
+
+sudo mount /dev/sda1 /media/array/Windows
+
+sudo mount -t ntfs /dev/sda1 /media/array/Windows
+
+##Above command gives below error:
+Windows is hibernated, refused to mount.
+The disk contains an unclean file system (0, 0).
+Metadata kept in Windows cache, refused to mount.
+Falling back to read-only mount because the NTFS partition is in an
+unsafe state. Please resume and shutdown Windows fully (no hibernation
+or fast restarting.)
+Could not mount read-write, trying read-only
+#############solved this issue by simly completely shutting down windows first, yikes!!.
+
+sudo mount -t ntfs /dev/sda5 /media/array/Sahil
+
+
+--
+
+#You don't need below packages as drives mouts directly with above simple commands, yikes!.(though i ony checked vi Nautilus click and mount thing, :lol:
+sudo apt install fuse
+sudo apt install ntfs-3g
+
+sudo mount -t ntfs-3g /dev/sda5 /media/array/Sahil
+##Above command shows:
+The disk contains an unclean file system (0, 0).
+Metadata kept in Windows cache, refused to mount.
+Falling back to read-only mount because the NTFS partition is in an
+unsafe state. Please resume and shutdown Windows fully (no hibernation
+or fast restarting.)
+Could not mount read-write, trying read-only
