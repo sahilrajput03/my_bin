@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+npm init -y && create.gitignore && create.prettierrc.yaml

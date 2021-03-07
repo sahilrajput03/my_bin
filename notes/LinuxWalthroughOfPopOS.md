@@ -113,6 +113,7 @@ gnome-terminal -e /home/array/my_bin/run_emoji_picker
 # alias clip='xclip -sel clip' # and now it works greatly!
 # src: https://linuxize.com/post/how-to-add-directory-to-path-in-linux/
 
+# IT IS COMPULSORY TO ADD YOUR BINARIES PATHS TO /etc/sudoers file, as then only sudo will know your binaries, yikes!!
 # Use below command to add your executable(in /home/my_bin) accessible by sudo:
 $ sudo visudo /etc/sudoers
 # and add /home/array/my_bin to the secure_path variable, yikes!! (Now sudo will recognise your binaries in that /home/array/my_bin directory too.) Tip: Why does one needs visudo? => https://serverfault.com/a/26306

@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+yarn init -y && create.gitignore && create.prettierrc.yaml

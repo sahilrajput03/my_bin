@@ -3,4 +3,4 @@
 branchName=$(git symbolic-ref --short -q HEAD) 
 #src: https://stackoverflow.com/a/11958481
 
-gac $* && git push -u origin $branchName
+gac "$@" && git push -u origin $branchName

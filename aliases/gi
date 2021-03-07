@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+git init && create.gitignore && create.prettierrc.yaml
