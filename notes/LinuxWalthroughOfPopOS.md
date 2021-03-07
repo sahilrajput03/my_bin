@@ -1,3 +1,51 @@
+### Using snippy
+
+Source: snippy is made using dmenu(a gui maker for anything in linux), visit a short tutorial in linux for dmenu [here](https://youtu.be/R9m723tAurA). Visit awesome docs for dmenu [here](https://dmenu.readthedocs.io/en/latest/).
+
+For the source code of snippy get it [here](https://github.com/gotbletu/shownotes/blob/master/snippy.sh). For snippy tutorial demo [here](https://youtu.be/90xoathBYfk).
+
+```
+
+```
+
+
+
+### Installing snap for cacher - a snippet manager tool
+
+```bash
+$ sudo apt update
+$ sudo apt install snapd
+# src:https://snapcraft.io/docs/installing-snap-on-pop
+# test if its installed correctly via below commands:
+$ sudo snap install hello-world
+hello-world 6.3 from Canonical✓ installed
+$ hello-world
+Hello World!
+```
+
+### Install cacher only after installing snap on Pop OS!
+
+source : https://snapcraft.io/cacher
+
+another article on snippet manager: https://dev.to/tomlangdon/5-code-snippet-managers-that-will-change-the-way-you-write-code-10ml
+
+anthoer one: https://www.slant.co/topics/7247/~code-snippets-manager#10
+
+```bash
+sudo snap install cacher
+```
+
+
+
+### Amazing map capslock key to esc and use shift+caps to general caplock toggling behaviour
+
+```bash
+sudo apt install gnome-tweak-tool
+sudo apt install xcape
+```
+
+Then simply go to launcher and type **Tweaks** , then navigate to **Keyboard and Mouse**, then choose **Additional Layout Options** and then choose **Capslock Behaviour** and select **Make unmodified Caps Lock an additional Esc, but Shift + Caps Lock behaves like regular Caps Lock**, yikes, and now it works great!!, yikes!!
+
 ### omf theme
 
 ```bash
