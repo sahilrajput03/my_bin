@@ -2,5 +2,5 @@
 # shopt -s expand_aliases && source ~/my_bin/my_bashrc_sources/source1
 #above line is to import my sources's aliases to this script too, yikes!!!
 
-ga && gco "$* - sahil."
+ga && gco "$* ~ sahil"
 #echo "$*" #For testing only.
