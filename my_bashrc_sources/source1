@@ -12,7 +12,7 @@ alias sourcebashrc='source ~/.config/fish/config.fish'
 alias vibashrc='vi ~/.bashrc'
 alias clip='xclip -sel clip'
 
-export PATH="/home/array/my_bin:$PATH"
+#export PATH="/home/array/my_bin:$PATH"
 
 # --Above are old from ~/.bashrc file.
 # -- Below commands are from windows's `~/.config/fish/config.fish` file, yikes!!

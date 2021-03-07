@@ -1,12 +1,21 @@
+### To add a path to the path variable, simply do this..
+
+```bash
+$ sudo gedit /etc/environment
+# and add the path there, and logout and login from there, otherwise if you don't want to feel the pain of login and logout, you can simply use the export thig as suggested by everyone one internet though., yikes!!
+```
+
+
+
 ### Using snippy
 
-Source: snippy is made using dmenu(a gui maker for anything in linux), visit a short tutorial in linux for dmenu [here](https://youtu.be/R9m723tAurA). Visit awesome docs for dmenu [here](https://dmenu.readthedocs.io/en/latest/).
+Source: snippy is made using dmenu(a gui maker for anything in linux), visit a short tutorial in linux for dmenu, download from [here](https://tools.suckless.org/dmenu/) . Visit awesome docs for dmenu [here](https://dmenu.readthedocs.io/en/latest/).
 
-For the source code of snippy get it [here](https://github.com/gotbletu/shownotes/blob/master/snippy.sh). For snippy tutorial demo [here](https://youtu.be/90xoathBYfk).
+For the source code of snippy get it [here](https://github.com/gotbletu/shownotes/blob/master/snippy.sh). For snippy tutorial demo [here](https://youtu.be/90xoathBYfk). Also try making something out of dmenu's info @ arch's linux @ [here](https://wiki.archlinux.org/index.php/dmenu).
 
-```
+* Place your snippet files under ~/.snippy folder and you can organise them into different folders too, yikes!!
 
-```
+For subsitution of Auto hotkey(python's implementation though) and linux, visit [here](https://unix.stackexchange.com/questions/165124/autohotkey-equivalent#:~:text=There's%20a%20port%20of%20AutoHotKey,unix%20systems%20is%20the%20shell.), and [here](https://github.com/autokey/autokey).
 
 
 
