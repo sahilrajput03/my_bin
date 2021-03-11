@@ -1,10 +1,26 @@
+### ssh thing
+
+- Know about passing password as argument usign `sshpass`, install it via `sudo apt install sshpass`. Know more [here](https://serverfault.com/a/946191).
+
+- Install and run ssh on some pc by following this article [here](https://dev.to/zduey/how-to-set-up-an-ssh-server-on-a-home-computer).
+
+- Now you can ssh a pc using
+
+  ```bash
+  sshpass -p 'target-pass' ssh sahil@192.168.18.17 #Where taget-pass is the password of target machine, yikes!!
+  ```
+
+  
+
+***
+
 - You can get path of global `node_modules` folder for npm in linux via: `npm root -g` and **Ouputs:** `/usr/lib/node_modules`. src: [here](https://stackoverflow.com/questions/24830586/where-do-global-npm-packages-get-installed-on-ubuntu). Also note that, `npm get prefix` **Ouputs**: `/usr` though.
 
 - Set NODE_PATH in linux as `/usr/lib/node_modules/`-
 
   ```bash
   # in your ~/my_bin/my_bashrc_sources/source1 file add below line to make node detect globally installed modules, yo!!
-  set NODE_PATH /usr/lib/node_modules
+  export NODE_PATH=/usr/lib/node_modules #This works yikes!!
   ```
 
   
