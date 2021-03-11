@@ -52,6 +52,7 @@
 # alias gco='git commit -m'
 # alias gch='git checkout'
 # alias gd='git diff'
+# alias gcl='git clone'
 #TIP: USING `gitf`: You can use fetcher i.e., npm package: `npm install -g github-files-fetcher` and have defined a bash 
 # script for it in additionalPath, i.e., gitf stands for gitfile or gitfolder, it can clone file/folder
 # and repositories in .zip format.

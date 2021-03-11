@@ -27,7 +27,9 @@
 #    TIP: If you're using XMonad, add something like this to xmonad.hs
 #      ((mod4Mask, xK_s), spawn "/path/to/snippy")
 #
-DIR=${HOME}/.snippy
+#DIR=${HOME}/.snippy 
+#*****NOTE, I HAVE ADDED MY OWN CUSTOM DIRECTORY FOR THE SNIPPY TO LOOK FOR , YIKES!!
+DIR='/home/array/my_bin/snips'
 #DMENU_ARGS="-fn 'Inconsolata 12'"
 #DMENU_ARGS="-b -p gotbletu$ -fn 10x20"
 XSEL_ARGS="--clipboard --input"

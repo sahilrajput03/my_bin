@@ -1,3 +1,30 @@
+- You can get path of global `node_modules` folder for npm in linux via: `npm root -g` and **Ouputs:** `/usr/lib/node_modules`. src: [here](https://stackoverflow.com/questions/24830586/where-do-global-npm-packages-get-installed-on-ubuntu). Also note that, `npm get prefix` **Ouputs**: `/usr` though.
+
+- Set NODE_PATH in linux as `/usr/lib/node_modules/`-
+
+  ```bash
+  # in your ~/my_bin/my_bashrc_sources/source1 file add below line to make node detect globally installed modules, yo!!
+  set NODE_PATH /usr/lib/node_modules
+  ```
+
+  
+
+  ```bash
+  type node
+  type npm
+  ```
+
+### For linux systems by default npm uses /usr directory to install any global packages
+
+You can verify that via:
+
+```bash
+sudo npm install -g markdown-styles
+type generate-dm #Outpus: /usr/bin/generate-md
+```
+
+
+
 ### To add a path to the path variable, simply do this..
 
 ```bash
@@ -234,6 +261,7 @@ Coz it wants to promote usage of workspaces more, and you get to be more product
 
 ## Tip
 
+- Use win+v to see notifications in popos, yo!
 - Use `super+g` to toggle floating mode.
 - Get size of current folder via `du -sh` or use `du -sh someFileOrSomeFolder`. Yikes!!
 - What is suspend? Ans: Basically its super ultra low power mode, read more @ https://tinyurl.com/haas2et5 , and really really recommended for linux.* Meaning of -h flag:
