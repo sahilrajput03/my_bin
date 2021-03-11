@@ -6,7 +6,7 @@ alias fishbashrc_cd='cd ~/.config/fish/'
 
 alias fishbashrc_source='. ~/.config/fish/config.fish'
 
-export PATH="/home/array/my_bin:/home/array/my_bin/aliases:$PATH"
+export PATH="/home/$USER/my_bin:/home/$USER/my_bin/aliases:$PATH"
 # ^^ This would not work for any sudo prefixed command and will rather throw error that binary not found, so you need to edit visudo /etc/sudoers file or so, check in your "Linux walkthrough file."
 
 export NODE_PATH=/usr/lib/node_modules
