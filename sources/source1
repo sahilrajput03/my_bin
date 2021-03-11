@@ -14,6 +14,10 @@ export NODE_PATH=/usr/lib/node_modules
 
 #############My Comments##############
 
+# :: Use script "add_to_fish" to add to fish shell. (Caution: It will overwrite your config.fish file, and in most cases you want that)
+
+# :: Use script "add_to_bash" to add to bash shell. (Feel free to use this one as it won't overwrite your ~/.bashrc file at all)
+
 # :: TO ADD THIS FILE(for fish): Run script "fishfly" in the same folder.
 ## LEARN: cd doesn't work subshell scripst, so remember you get to use only 
 # aliases for `cding`.
