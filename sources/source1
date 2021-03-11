@@ -16,7 +16,7 @@ export NODE_PATH=/usr/lib/node_modules
 
 # :: Use `secrets` file in this folder to store your secret variables. Using below "add_to_*" will source secrets files in your respective shells. Yikes!
 
-# :: Use script "addToFish" to add to fish shell. 
+# :: Use script "addToFish" to add to fish shell. *Tip: Use alias `fishbashrc_source` to make current shell fresh and working after sourcing the source1 and secrets scripts. Yo!
 
 # :: (NOTE: If you are using fish shell, you don't need "addToBash" at all.) Use script "addToBash" to add to bash shell.
 
