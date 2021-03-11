@@ -1,3 +1,24 @@
+### How can I run a command which will survive terminal close?
+
+stackoverflow's answer [here](https://unix.stackexchange.com/a/4006). 
+
+My notes:
+
+```bash
+$ nohup myProgram &
+
+### or use below
+
+$ myProgram &
+$ disown
+```
+
+
+
+### For`sudo shutdow now` and `sudo reboot` help visit the gits you made @gist.
+
+Nothing to discuss here now!
+
 ### ssh thing
 
 - Know about passing password as argument usign `sshpass`, install it via `sudo apt install sshpass`. Know more [here](https://serverfault.com/a/946191).
