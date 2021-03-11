@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "##### BELOW IS MY SOURCES FILE THAT HAS ALL THE ALIASES, YIKES!!
+. /home/$USER/my_bin/sources/source1
+. /home/$USER/my_bin/sources/secrets" >> /home/$USER/.config/fish/config.fish

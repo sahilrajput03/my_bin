@@ -14,9 +14,11 @@ export NODE_PATH=/usr/lib/node_modules
 
 #############My Comments##############
 
-# :: Use script "add_to_fish" to add to fish shell. (Caution: It will overwrite your config.fish file, and in most cases you want that)
+# :: Use `secrets` file in this folder to store your secret variables. Using below "add_to_*" will source secrets files in your respective shells. Yikes!
 
-# :: Use script "add_to_bash" to add to bash shell. (Feel free to use this one as it won't overwrite your ~/.bashrc file at all)
+# :: Use script "addToFish" to add to fish shell. 
+
+# :: Use script "addToBash" to add to bash shell.
 
 # :: TO ADD THIS FILE(for fish): Run script "fishfly" in the same folder.
 ## LEARN: cd doesn't work subshell scripst, so remember you get to use only 
