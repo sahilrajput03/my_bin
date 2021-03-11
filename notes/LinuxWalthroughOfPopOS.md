@@ -181,7 +181,7 @@ sudo dpkg -i ~/Downloads/bat-musl_0.18.0_amd64.deb # Yikes, bat is installed now
 # Install fish :
 sudo apt install fish
 set fish_greeting # This will remove the message though.
-set fish_greeting Have an awesome day!! # This will set some message though.
+set fish_greeting "Have an awesome day!!" # This will set some message though.
 # I not using any oh-my-fish themem though.., :)
 chsh -s /usr/bin/fish # Yess, this did work, yikes!!
 cat /etc/passwd # Verify that shell is changed in this file (** YOU NEED TO LOGOUT AND LOGIN AGAIN TO SEE THE EFFECT..),yikes! src: https://askubuntu.com/questions/195361/chsh-s-usr-bin-zsh-not-working
