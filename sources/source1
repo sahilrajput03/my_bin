@@ -30,3 +30,14 @@ export NODE_PATH=/usr/lib/node_modules
 
 # :: alias sp='cd /c/Users/chetan/AppData/Roaming/code/User/snippets/' 
 # TODO: change above alias path for linux.
+
+# :: If you wanna make aliases accessible via `sudo`(only works in bash shell) too, 
+# then you need below alias for that:
+# alias sudo='sudo '
+
+#* Above thing doen't work for fish though, bash is better for this fix as bash recognises
+# such aliases, i guess. :(
+# alias sl='sudo ls -al' #FOR TESTING.
+#*LEARN: For making aliases work we must do thsi..!!, so the best way to utilize 
+# sudo'ed aliases is that you must use shell scripts and pass the param 
+# as $* yikes!!
