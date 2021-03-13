@@ -1,3 +1,9 @@
+#### What font to use for VSCODE and GNOME TERMINAL so that it supports every symbol and everything looks cool?
+
+**Short answer**: Use **Fira Code**, see **I**nstructions, **D**ownload link and **I**nstallation process for both vscode and linux (you got to set **Fira Code Regular** or other fira font variant in that repo too) @ [here](https://github.com/tonsky/FiraCode) for both Yikes! 
+
+It works amazing for vscode and amazing for gnome terminal as well.
+
 ### How can I run a command which will survive terminal close?
 
 stackoverflow's answer [here](https://unix.stackexchange.com/a/4006). 
