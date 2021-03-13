@@ -1,0 +1,11 @@
+#!/bin/bash
+wakeonlan 00:19:66:d0:73:4c
+
+####Comments below...
+# sudo ethtool -s eth0 wol g #YOU NEED TO ENABLE THIS ONCE ON THE TARGET MACHINE, YIKES!
+# ping -c 4 192.168.18.17 && arp -n 	#TO GET THE MAC ADDRESS OF TARGET MACHINE. 
+# sudo apt install etherwake 		#TO INSTALL WAKEONLAN BINARY.
+#Get the guide here: 
+# https://www.cyberciti.biz/tips/linux-send-wake-on-lan-wol-magic-packets.html
+
+# TIP: On asrock board, you need to enable acpi settings(In bios settings) for "PCE Devices Power On" > "Enabled"
