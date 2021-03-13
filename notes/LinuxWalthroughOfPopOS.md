@@ -361,3 +361,4 @@ src: https://help.ubuntu.com/16.04/ubuntu-help/power-hibernate.html
 - Vscode from Pop store(using Pop! OS(deb)
 - Download chrome's .deb file using its official site, and installed via `sudo apt install ./google-chrome-stable_current_amd64.deb`, yikes!!
 
+ck
