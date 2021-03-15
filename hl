@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+heroku logs -a $heroku_app

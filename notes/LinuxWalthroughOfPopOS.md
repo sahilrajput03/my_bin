@@ -1,3 +1,7 @@
+## Install heroku in ubuntu 16+ with below command
+
+`sudo snap install --classic heroku`
+
 #### What font to use for VSCODE and GNOME TERMINAL so that it supports every symbol and everything looks cool?
 
 **Short answer**: Use **Fira Code**, see **I**nstructions, **D**ownload link and **I**nstallation process for both vscode and linux (you got to set **Fira Code Regular** or other fira font variant in that repo too) @ [here](https://github.com/tonsky/FiraCode) for both Yikes! 

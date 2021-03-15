@@ -1,0 +1,6 @@
+#!/bin/bash
+
+branchName=$(git symbolic-ref --short -q HEAD)
+#src: https://stackoverflow.com/a/11958481
+
+echo "+ git push -u origin $branchName" && git push origin $branchName
