@@ -1,0 +1,5 @@
+#!/bin/bash
+branchName=$(git symbolic-ref --short -q HEAD) #Source: https://stackoverflow.com/a/11958481
+set -x
+git pull $@ origin
+#src: https://www.atlassian.com/git/tutorials/syncing/git-pull#:~:text=The%20git%20pull%20command%20is,repository%20to%20match%20that%20content.&text=Once%20the%20content%20is%20downloaded,point%20at%20the%20new%20commit.

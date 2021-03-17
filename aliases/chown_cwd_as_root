@@ -1,0 +1,6 @@
+#!/bin/bash
+#chown_cwd_as_root: change owner of current working directory as root.
+#This is necessary to do for any application to run on port other than 8080 via npm. Though using `sudo node myFile` will still work anyway without chowning current working directory as root at all.
+#For issue: https://github.com/npm/cli/issues/2027
+
+sudo chown root .
