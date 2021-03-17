@@ -3,6 +3,8 @@ alias fishfunctions='cd /usr/share/fish/functions/'
 alias fishbashrc_cd='cd ~/.config/fish/'
 alias fishbashrc_source='. ~/.config/fish/config.fish'
 alias cdflexzombies='cd /home/array/my_bin/snips/css/flexbox-zombies'
+##For other stuff
+alias gch='git checkout' #This is good for autocompletion in fish!
 
 # :: Path:
 export PATH="/home/$USER/my_bin:/home/$USER/my_bin/aliases:$PATH"
@@ -20,7 +22,7 @@ export NODE_PATH=/usr/lib/node_modules
 
 # :: (NOTE: If you are using fish shell, you don't need "addToBash" at all.) Use script "addToBash" to add to bash shell.
 
-# :: TO ADD THIS FILE(for fish): Run script "fishfly" in the same folder.
+# :: TO ADD THIS FILE(for fish): Run script "./fishfly" in the same folder.
 ## LEARN: cd doesn't work subshell scripst, so remember you get to use only 
 # aliases for `cding`.
 
@@ -31,13 +33,16 @@ export NODE_PATH=/usr/lib/node_modules
 # :: alias sp='cd /c/Users/chetan/AppData/Roaming/code/User/snippets/' 
 # TODO: change above alias path for linux.
 
-# :: If you wanna make aliases accessible via `sudo`(only works in bash shell) too, 
+# :: If you wanna make aliases accessible via `sudo`(ONLY WORKS IN BASH SHELL) too, 
 # then you need below alias for that:
 # alias sudo='sudo '
 
 #* Above thing doen't work for fish though, bash is better for this fix as bash recognises
 # such aliases, i guess. :(
 # alias sl='sudo ls -al' #FOR TESTING.
+
 #*LEARN: For making aliases work we must do thsi..!!, so the best way to utilize 
 # sudo'ed aliases is that you must use shell scripts and pass the param 
 # as $* yikes!!
+
+#* For all the shell scripts to be accessible by the sudo command as well, you need to add paths i.e., my_bin and my_bin/aliases to the `secure_path` using command `sudo visudo /etc/sudoers`.

@@ -1,3 +1,90 @@
+!!!!!!!!!!!!!>>>>>>>>>>>..FIX the vim backaspace shit now!!!!!!!!!!!1
+
+## Github workflow enabling/disabling manually from github:
+
+https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow
+
+### Important: If you face password prompting duing git push??
+
+Probaly the reason is you have cloned the repo from github, and thats why it needs you to enter password everytime.. So, how to fix it..?
+Just do:
+```
+git remote -v 		#Show remotes.
+git remote rm origin 	#Remove origin remote.
+hub create 		#Caution folder name must be same as repository name, otherwise you need something like `hub create repo_name` inspite of just `hub create`.
+```
+
+Now after readding the remote, it'll not ask for any password on each push request, yikes!!
+
+### linux
+
+- If you type command alias in your cli, it'll show you all the aliases you have in `.bashrc` or the `config.fish` file corresponding to the shell you are using.
+
+- Using cron, use `crontab -e` to edit the crontab file. You are only asked the first time for the editor to use to edit the file.(Though you can manually change the editor later on using command `select-editor`, yikes!!
+	Use https://crontab.guru/every-1-minute to make some cool cron patterns.
+	```bash
+	#Both of below ways work equally good in crontab file, (get it via `crontab -e`) !!!
+	#* * * * * /home/array/my_bin/req
+	#* * * * * ~/my_bin/re
+	```
+- Running cron jobs for time less than one minute: visit => https://stackoverflow.com/questions/1034243/how-to-get-a-unix-script-to-run-every-15-seconds/1034304#1034304
+
+## ..??
+https://t.me/fullstackcourse/114099### Heroku apps sleep ??
+
+Read about it here(awesomely explained, PLEASE READ THIS IN WHOLE TO UNDERSTAND THE HEROKU SERVICES..): https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping
+tl;dr;
+If an app has a free web dyno, and that dyno receives no web traffic in a 30-minute period, it will sleep. In addition to the web dyno sleeping, the worker dyno (if present) will also sleep.
+
+### Error: a step cannot have both the `uses` and `run` keys, yikes!!!! (learn this is rule in github actions).
+
+
+### Install act, a local workflow tester, yikes!
+
+```
+sudo curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
+# For available comaands from act cli, visit: https://github.com/nektos/act#commands
+```
+
+## Install docker, yikes
+
+```bash
+#Date: 15March, 2021.
+#Below commands are prepared by me from: https://docs.docker.com/engine/install/ubuntu/
+#*****NOTE YOU MUST EXECUTE BELOW SCRIPT IN A BASH SHELL, SO IF YOU ARE USING FISH AS DEFAULT SHELL THEN YOU CAN SIMPLY GET BASH SHELL VIA TYPING `BASH` IN FISH SHELL, YIKES!!*******
+sudo apt-get update
+
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+# Verify that docker is installed using below command.
+sudo docker run hello-world
+```
+
+*To install: follow instructions here: https://docs.docker.com/engine/install/ubuntu/#uninstall-old-versions
+
+## Install tree for printing folder structure to the commandline
+
+```bash
+sudo apt install tree
+tree -I node_modules #tree command by default doesn't print hidden files and folder(i.e., files prefixed with . in filename).
+tree -aI '.git|node_modules' #This is best. (now aliased to `trees` in my_bin).
+# src: https://zaiste.net/posts/tree-ignore-directories-patterns/
+```
+
 ## Install heroku in ubuntu 16+ with below command
 
 `sudo snap install --classic heroku`
