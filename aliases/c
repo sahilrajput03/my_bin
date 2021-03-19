@@ -1,3 +1,11 @@
 #!/bin/bash
-set -x
-clear
+# code .
+if  [ $# -eq 0 ]
+then
+  code .
+else
+  code $*
+fi
+
+# Check if arguments are passed or not: https://stackoverflow.com/a/6482403
+# Using if else in bash: https://linuxize.com/post/bash-if-else-statement/
