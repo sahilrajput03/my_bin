@@ -1,2 +1,2 @@
 #!/bin/bash
-tree -aI '.git|node_modules'
+tree -aI '.git|node_modules|.next'

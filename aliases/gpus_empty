@@ -1,0 +1,5 @@
+#!/bin/bash
+branchName=$(git symbolic-ref --short -q HEAD) #Source: https://stackoverflow.com/a/11958481
+set -x
+git commit --allow-empty -m "empty-commit"
+git push $@ origin $branchName

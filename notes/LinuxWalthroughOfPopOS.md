@@ -1,3 +1,12 @@
+Running slow as see output from `free -h`
+
+[src](https://unix.stackexchange.com/questions/415814/memory-runs-full-over-time-high-buffer-cache-usage-low-available-memory).
+```
+#This will probably remove all your caches from the os!(won't hurn in any way though)
+sudo -i
+free -h && sync && echo 3 > /proc/sys/vm/drop_caches && free -h
+```
+
 !!!!!!!!!!!!!>>>>>>>>>>>..FIX the vim backaspace shit now!!!!!!!!!!!1
 
 ## Github workflow enabling/disabling manually from github:
@@ -457,5 +466,3 @@ src: https://help.ubuntu.com/16.04/ubuntu-help/power-hibernate.html
 - Tegegram Desktop from Pop store
 - Vscode from Pop store(using Pop! OS(deb)
 - Download chrome's .deb file using its official site, and installed via `sudo apt install ./google-chrome-stable_current_amd64.deb`, yikes!!
-
-ck
