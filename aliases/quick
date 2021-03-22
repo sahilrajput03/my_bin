@@ -1,0 +1,40 @@
+#!/usr/bin/node
+// Example usage of this binary:
+// * quick post 'https://nifty-darwin-aec8ea.netlify.app/api/hello' '{os: "pop os", email: "sahilrajput03@gmail.com"}'
+// #!/usr/local/bin/node
+// src: https://stackoverflow.com/a/20643568
+const dirty = require("dirty-json");
+let log = console.log;
+
+const exec = require("child_process").exec;
+let args = process.argv.slice(2);
+
+let json = JSON.stringify(dirty.parse(args[2]));
+// log(json);// Valid json now! Yikes!
+
+// var argsForCurl = ` -X POST -d '${json}' -H 'Content-Type: application/json' ${args[0]}`;
+var argsForCurl = ` -X ${args[0].toUpperCase()} -d '${json}' -H 'Content-Type: application/json' ${args[1]}`;
+// toUpperCase ensures that when user use words such as Post or post inspite of POST, the program would still work!
+exec("curl" + argsForCurl, (err, stdout, stderr) => {
+  if (err) {
+    // console.log("booo");
+    // node couldn't execute the command
+    // return; //do not use return coz function will not print anything then...
+  }
+
+  // the *entire* stdout and stderr (buffered)
+  log("\n::Response::\n");
+  // if (stdout) console.log(`${stdout}`);
+  if (stdout) console.log(JSON.stringify(JSON.parse(stdout), null, 2));
+  //* LEARN: Json.parse and json.stringify helps in pretty printing as in indented and new lines, src: https://stackoverflow.com/a/7220510 .
+  // if (stderr) console.log(`${stderr}`);
+});
+
+// :: BELOW CODE WORKS FINE THOUGH.
+// curl \
+//   -X POST \
+//   -H "Content-Type: application/json" \
+//   -d "$2" \
+//   "$1"
+
+// Help: Using n version manager and using $NODE_PATH in shell environment as "/usr/local/lib/node_modules".

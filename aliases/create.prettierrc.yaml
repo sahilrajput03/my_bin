@@ -1,0 +1,8 @@
+#!/bin/bash
+cp ~/my_bin/files/.prettierrc.yaml .
+
+# To use iif when using option `semi: false`, use below way to make iff work to format it pro
+perly:
+# ;(() => {
+#   log('hell')
+# })()

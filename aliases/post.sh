@@ -18,4 +18,4 @@ curl \
 # echo $1
 # echo $2
 # echo "$@"
-# Remember to set url via export command, 
+# Remember to set url via export command.

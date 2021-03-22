@@ -1,3 +1,83 @@
+## vlc
+
+1. ctrl+p, choose "simple" in preferences, and tick "Start in minimal view mode", yikes!!
+2. ctrl+p, choose "simple" in preferences, and untick "Resize interface to video size", yikes!!
+
+## Make the screencast record more than 30s !!
+
+Just execute the command as suggested in the url @ https://askubuntu.com/a/996955 to extend the max second to 600 secs, i.e., 10mins.
+
+```bash
+gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 600
+```
+## mongodb MONGO_POOLSIZE flag in mongodb nodejs driver
+
+Default value is 5.
+
+src: https://stackoverflow.com/a/52347027
+src2: https://medium.com/@kyle_martin/mongodb-in-production-how-connection-pool-size-can-bottleneck-application-scale-439c6e5a8424
+src3: poolsize managing if you are using mongoosejs: https://mongoosejs.com/docs/connections.html#connection_pools (default value is 5 though)
+wild: increasing max no. of connections for mongodb: https://stackoverflow.com/questions/16713415/mongodb-increasing-max-connections-in-mongodb
+
+## Make your vim's backspace work as by default backspace use compatibility mode as mentioned in link as mention in [here](https://askubuntu.com/a/296396)
+
+So, the solution is [there too](https://askubuntu.com/a/370458) that too, yikes!!
+FYI: vi ~/.vimrc, and add below two lines:
+
+```
+set nocompatible
+set backspace=2
+```
+Now, everything works fine with vim as I expect, yo!!
+
+## Disable vscode upate notification: https://stackoverflow.com/a/43780004 , yikes!!
+
+So I have check updates to manual i.e., update when i say update!!, yo!
+
+## Article I follwed: https://medium.com/founding-ithaka/setting-up-and-connecting-to-a-remote-mongodb-database-5df754a4da89
+
+{Beware do not use user authentication, i.e., do not add users and do not uncomment security in config file, and use db without any authentication}.
+
+
+* a almost same article : https://medium.com/@Hardy2151/how-to-connect-to-your-remote-mongodb-server-68725a8e53f
+
+* a latest article on doing same thing: https://www.digitalocean.com/community/tutorials/how-to-configure-remote-access-for-mongodb-on-ubuntu-20-04
+
+sudo mongo "mongodb://124.253.64.111:27017"
+
+### Make your mongod's settings via by executing:
+
+```
+sudo vi /etc/mongod.conf
+```
+
+and  make setttings like below:
+ 
+```toml
+net:
+  port: 27017
+  bindIp: 0.0.0.0
+```
+
+The answer that helped: https://stackoverflow.com/a/35063229
+  
+```bash
+ps -aux | grep mongod
+# ^^^^ to get the pid and then use
+sudo kill pid
+# ^^^ to actually kill coz sudo `systemctl restart mongod` or `sudo systemctl stop mongod` don't work actually for my case.
+
+mongod --fork --logpath /var/log/mongod.log
+
+sudo lsof -i | grep mongod #Tells the mongod port running on...
+sudo iptables -L
+sudo service mongod restart
+sudo vi /etc/mongod.conf
+sudo systemctl restart mongod
+
+- nextjs and netlify latest article, yikes!!: https://www.netlify.com/blog/2021/03/16/try-the-new-essential-next.js-plugin-now-with-auto-install/
+	- link inside that article to make nextjs site instantly with backend api's working too(if you need to enable cors too you should have a next.confi.js file similar to: https://github.com/sahilrajput03/next-netlify-starter/blob/main/next.config.js )
+
 Running slow as see output from `free -h`
 
 [src](https://unix.stackexchange.com/questions/415814/memory-runs-full-over-time-high-buffer-cache-usage-low-available-memory).

@@ -5,12 +5,14 @@ alias fishbashrc_source='. ~/.config/fish/config.fish'
 alias cdflexzombies='cd /home/array/my_bin/snips/css/flexbox-zombies'
 ##For other stuff
 alias gch='git checkout' #This is good for autocompletion in fish!
+alias c='clear'
 
 # :: Path:
 export PATH="/home/$USER/my_bin:/home/$USER/my_bin/aliases:$PATH"
 
 # :: Environement Variables Below:
-export NODE_PATH=/usr/lib/node_modules
+#export NODE_PATH=/usr/lib/node_modules #This is good if you aren't using n version manager.
+export NODE_PATH=/usr/local/lib/node_modules #This is good if you are using n version manager.
 
 
 
