@@ -1,3 +1,5 @@
+## Added ctrl+e to expand emmet in vscode shortcuts, yikes!!
+
 ## vlc
 
 1. ctrl+p, choose "simple" in preferences, and tick "Start in minimal view mode", yikes!!
