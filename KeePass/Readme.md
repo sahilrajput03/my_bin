@@ -5,3 +5,5 @@
 12345678901234
 
 #### Life is short, don't change the base password. ~ Sahil.
+
+Using popos you may simply use PopShop to install KeePassX in OS.
