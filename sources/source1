@@ -3,6 +3,8 @@ alias fishfunctions='cd /usr/share/fish/functions/'
 alias fishbashrc_cd='cd ~/.config/fish/'
 alias fishbashrc_source='. ~/.config/fish/config.fish'
 alias cdflexzombies='cd /home/array/my_bin/snips/css/flexbox-zombies'
+alias snips='cd /home/array/my_bin/snips'
+
 ##For other stuff
 alias gch='git checkout' #This is good for autocompletion in fish!
 alias c='clear'
