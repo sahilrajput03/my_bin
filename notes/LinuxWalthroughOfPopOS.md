@@ -1,3 +1,39 @@
+install anbox(amazing android emulator made for linux):
+sudo snap install --devmode --beta anbox
+refer official site though: https://docs.anbox.io/userguide/install.html
+#note: installv via snap didn't work :(
+#note: this thing helped though: https://www.youtube.com/watch?v=UDFnebCd50Q
+#install apps simply via:
+adb install path_to_myapp.apk
+src: https://docs.anbox.io/userguide/install_apps.html
+
+
+install playstore to anbox:
+source:
+https://www.linuxuprising.com/2018/07/anbox-how-to-install-google-play-store.html
+https://github.com/geeks-r-us/anbox-playstore-installer/
+
+--when opening playstore(after giving all permission to playstore, at the opening app) i used below command to be able to get the login screen in playstore, yikes!! =>
+sudo /snap/anbox/current/bin/anbox-bridge.sh start
+
+=---note- my jio-app installed via apk didn't work, even when i installed jio tv from playstore, it didn't work: so i gave it all permission from "Settings>apps> jio tv", not it behaves superb!!
+
+
+## Using npm while doing 
+```
+npx create-react-app my-app --use-npm
+```
+
+src: https://stackoverflow.com/a/61938578
+
+Move multiple folders files to a destination directory using -t flag for mv
+
+E.g., mv -t target/ file1 file2 folder1 folder2
+
+*Notice: You shouldn't use `/` in the end for source folders, othersie the contents insisde that will be moved.
+
+src: https://askubuntu.com/a/217067
+
 ## Added ctrl+e to expand emmet in vscode shortcuts, yikes!!
 
 ## vlc
