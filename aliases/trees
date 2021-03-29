@@ -1,2 +1,3 @@
 #!/bin/bash
 tree -aI '.git|node_modules|.next'
+#Also you can use `tree -L` to print one level of files/folders.
