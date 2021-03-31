@@ -1,0 +1,5 @@
+#!/bin/bash
+set -x
+# INSTALL: sudo apt-get install unzip
+# read more @ https://askubuntu.com/a/86852/702911
+unzip $1 -d $2

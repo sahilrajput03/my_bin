@@ -1,4 +1,25 @@
-install anbox(amazing android emulator made for linux):
+## change default branch name to `main` made when we do `git init` by below command
+
+```
+git config --global init.defaultBranch main
+#This makes chagnes to .gitconfig file in the ~ directory.
+```
+src: https://stackoverflow.com/a/42871621
+
+
+## my browser is getting bad font: i.e., Arial, "Helvetica Neue", Helvetica, sans-serif
+and specifically its "Helvetica Neue"
+
+
+:: Increased the delay of double click for popos ,now doble click works pretty comfortably in nautilus app.
+
+::filter today modified file/folders:
+ls -al | grep "Mar 29"
+
+
+
+
+:: install anbox(amazing android emulator made for linux):
 sudo snap install --devmode --beta anbox
 refer official site though: https://docs.anbox.io/userguide/install.html
 #note: installv via snap didn't work :(

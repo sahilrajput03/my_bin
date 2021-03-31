@@ -4,6 +4,7 @@ alias fishbashrc_cd='cd ~/.config/fish/'
 alias fishbashrc_source='. ~/.config/fish/config.fish'
 alias cdflexzombies='cd /home/array/my_bin/snips/css/flexbox-zombies'
 alias cdGridGarden='cd /home/array/my_bin/snips/css/grid-garden'
+alias cdDesign1='cd /home/array/Documents/github-repos-2021/finaldesigns/design1'
 alias snips='cd /home/array/my_bin/snips'
 
 ##For other stuff

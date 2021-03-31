@@ -1,0 +1,4 @@
+#!/bin/bash
+set -x
+# SYNTAX: tar -xvzf input.tar destinationFolder/
+tar –xvzf $1 –C $2
