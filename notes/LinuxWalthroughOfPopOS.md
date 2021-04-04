@@ -17,8 +17,6 @@ and specifically its "Helvetica Neue"
 ls -al | grep "Mar 29"
 
 
-
-
 :: install anbox(amazing android emulator made for linux):
 sudo snap install --devmode --beta anbox
 refer official site though: https://docs.anbox.io/userguide/install.html

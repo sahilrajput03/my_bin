@@ -6,6 +6,7 @@ alias cdflexzombies='cd /home/array/my_bin/snips/css/flexbox-zombies'
 alias cdGridGarden='cd /home/array/my_bin/snips/css/grid-garden'
 alias cdDesign1='cd /home/array/Documents/github-repos-2021/finaldesigns/design1'
 alias snips='cd /home/array/my_bin/snips'
+alias lsa__='ls -a -I . -I .. --color'
 
 ##For other stuff
 alias gch='git checkout' #This is good for autocompletion in fish!

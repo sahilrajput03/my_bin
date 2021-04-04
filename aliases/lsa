@@ -1,2 +1,7 @@
-#!/bin/bash
-ls $@ -a
+#!/usr/bin/fish
+ls -a -I . -I .. --color
+#ls $@ -a --color -I . -I ..
+# https://unix.stackexchange.com/a/147243
+#
+# Ommit . and .. from the ouput using `-I` option:
+# src: https://askubuntu.com/a/512963
