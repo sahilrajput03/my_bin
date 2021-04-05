@@ -1,0 +1,4 @@
+#!/bin/bash
+# This script is to unstage everything, i.e, anything you added via `git add file1 folder1 ..` or `git .`. Yikes!!
+set -x
+git reset

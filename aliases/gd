@@ -1,3 +1,4 @@
 #!/bin/bash
 set -x
 git diff $*
+#git diff HEAD

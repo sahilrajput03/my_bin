@@ -1,3 +1,14 @@
+## using chown
+
+chown array:array file/folder or .
+chown -R array:array file/folder or .
+
+## git unstage: use binary `gu` from now onwards, it'll unstage everything even if you are in a nested folder of the git repo.
+
+## git diff HEAD to diff between the `last commit`(i.e., HEAD) and the index(staged area).
+
+Read this stackoverflow answer to learn about 
+
 ## change default branch name to `main` made when we do `git init` by below command
 
 ```

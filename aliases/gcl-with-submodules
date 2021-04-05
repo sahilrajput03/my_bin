@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+git clone --recurse-submodules -j8 $@
