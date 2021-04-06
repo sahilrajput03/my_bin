@@ -1,0 +1,85 @@
+*Make some good design like facebook or other design things with bare css, yikes! For instant, take "Instagram layout", "Google Layouts", "Twitter Layout", "Telegram Layouts", etc.
+
+*Merge 8gb drive to some disk and create 10 gb swap file like in the vid tutorial for hibernation, yikes!
+
+**If you are unsure which init system your platform uses, run the following command:
+ps --no-headers -o comm 1
+
+Then select the appropriate tab below based on the result:
+
+systemd - select the systemd (systemctl) tab below.
+init - select the System V Init (service) tab below.
+
+
+** Start mongod service via: 
+sudo systemctl start mongod
+** Stop MongoDB.
+sudo systemctl stop mongod
+** Restart MongoDB
+sudo systemctl restart mongod
+** Start mongod shell
+mongo
+
+**To uninstall and remove packages visit below section:
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#uninstall-mongodb-community-edition
+
+::TODO FOR USEWHAT::
+#1 Add built in mutability for useWhat library,  an make some big projects using useWhat package. Make use of immutability for e.g.,
+ic passed value to setState is object then make it new via a fresh function. Basically fresh funct fist checks for value passed is simple value like string or number or boolean then it'll call it simply the setState, if the param is object or array then {...obj} or [...arrayObj] accprdingly, if the param is function then call it with setState directly too, after making this update then useWhat will be amazing!!.. And fun... Make api like useWhati(), and this api will serve the new api that I want. Also you'll need to implement the useWhat api as well for the same shit that is immutable thing when passed for setState api. THE BIG THING HERE IS THE IMPLEMENTATION I.E., the fresh function will only be implemented if the param is equal to the previous state, if yes then apply the fresh function yikes!!..
+
+## do the tailwindcss crashcourse from traversymedia, already downloaded in mx player.
+
+
+- Make an interface for people for creating games for children or for anything, contact this guy who created flexbox zomibes and get his help for creating other games for children and make them lrarn through them. Also make the games more of like o jective type things questions and make them choose the game theme, basically game theme is like making game more of like a mqario like or some other game like.
+
+- Arrange PopOS with its usb installer, and thius add t like..ALWASY USE LTS version coz its easy to install, as OS with development was difficult to install as required another gpt disk extra at the time of installation, and thay is really difficult, + ALSO ADD THE VIDEO LINK FOR THE SAME..
+
+- heckkx i should hqve used the LTS version i.e., 20.04 from the popos os downloads.. :))
+
+- Make a futuristic {Provider, useSharedMutable: useS} from 'personal-react-tracked' package that has all the store.js code and set initialDefaultValue {},yikes!!!. yo!!...
+
+- Make the "What did u watch lastltly..?" community webapp.
+
+- try maling a bot that will record your audio if you call them vis PAbot and get the text message out of it and convert it to somebody else's voice and play that after calling them(you can make a codeword like i am listenting to you)  or any text that includes listen/listening but without a not keyword in it...), yikes..!
+- (i guess this i alreadu found) make beautiful speaking alarm that will remind you youd todo list that you made kar night in the early morning .....
+- roz-roz kya bnaeyen(the magic phrase)..? A bot that helps u tell the receipies for things you would like to eat and will tell you the approx time to make them rrady to serve.
+
+- Add this stackoverflow's question-https://stackoverflow.com/questions/53074551/when-should-you-not-use-react-memo in useWhat's documentation in the performance example, yikes!!..(in info only).
+- Make article why reudx is o eroptimized and the cost to overoptimization isn't any worthy..! (https://stackoverflow.com/questions/53074551/when-should-you-not-use-react-memo#:~:text=If%20your%20component%20uses%20DEEP,ALWAYS%20CHEAPER%20than%20calling%20React.&text=memo%20will%20not%20work%2C%20because,ALSO%20be%20wrapped%20in%20React.)
+
+- - Scratch card based app that gives everyone gifts, may be in form of message/thought/motivation/health related. Like google-pay app, like or opentalk like app.Its app name is `local`.
+
+- Add stipejs and rustly to result.
+
+- Add about the NODE_PATH's value to set when npm is installed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

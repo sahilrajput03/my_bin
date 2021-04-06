@@ -1,0 +1,43 @@
+svg interesting: 
+https://medium.com/@ayumitabinote/how-to-resize-a-svg-image-7829bac8948c
+
+* Disable prettier to format mdx files or any other files: 
+two ways: 
+- set it in vscode itself, src: https://stackoverflow.com/a/53222145/10012446
+- set it in project level so prettier would never ever interefere if you ever reinstall your editor, and also its easy to share between people with .prettierignore file, as this is a more of a global solution. src: https://stackoverflow.com/a/53222145/10012446
+
+* Usign styled components, and using styled from it, was causing some-weird bugs, so i got this stackoverlow: 
+
+=> The actualsolution was to put a .babelrc file in my next project with contents from official example from nextjs/examples, yikes, i.e., https://github.com/vercel/next.js/blob/canary/examples/with-styled-components/.babelrc
+
+* Vscode extension for syntax highlighting in mdx files: its love: https://marketplace.visualstudio.com/items?itemName=silvenon.mdx
+
+https://github.com/vercel/next.js/tree/canary/examples/with-mdx
+
+https://prismjs.com/plugins/line-highlight/#linkable.25
+
+https://mdxjs.com/advanced/transform-content
+
+
+https://mdxjs.com/advanced/plugins
+
+https://mdxjs.com/getting-started
+
+https://mdxjs.com/getting-started/next
+
+https://mdxjs.com/guides/syntax-highlighting
+
+https://mdxjs.com/guides/live-code
+
+https://github.com/syntax-tree/mdast#code
+
+https://prince.dev/highlight-with-react
+
+https://prince.dev/prism-react-renderer
+
+https://github.com/FormidableLabs/prism-react-renderer
+
+
+My thing solved here => https://github.com/FormidableLabs/prism-react-renderer/issues/26
+
+=> Nextra's inbuilt way of supporting codesyntax doesn't allow for line highlighting, so i made a custom component that would help me do this, yikes!! Find it @ https://codesandbox.io/s/prism-react-renderer-example-line-highlight-yikes-dckbh?file=/src/Basic.js .

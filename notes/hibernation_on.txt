@@ -1,0 +1,46 @@
+Src: https://www.youtube.com/watch?v=XckJEFTmxuM
+
+sudo fallocate -l 11222m /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+#Note that UUID displayed in above command output, will get chage soon, forget about it.
+sudo nano /etc/fstab
+#comment the cryptswap line in that file using # in start of the line.
+# And add below line to it:
+/swapfile none swap sw 0 0
+# check the `free -h` output and reboot the system, and again check the `free -h`'s ouput, and you should see the newly added swapfile there..!!@video 7:32
+
+findmnt -no UUID -T /swapfile #Output: 5ec12f1d-f3c2-48dd-b137-a33969c60788
+sudo filefrag -v /swapfile | awk '{ if($1=="0:"){print $4} }' #Produces output: 4345856.., where 4345856 is our resume_offset thing, yo!!
+sudo kernelstub -a 'resume=UUID=5ec12f1d-f3c2-48dd-b137-a33969c60788 resume_offset=4345856'
+#NOTE: I HAVE MANUALLY MOUNTED MY sda1 i.e., by efi partition AT /boot/efi path, simply did this via `Disk` utility in popOS, yikes!!(then only above kernelstub worked actually, yikes!!)
+
+sudo vi /etc/initramfs-tools/conf.d/resume # and add below line to it...
+resume=UUID=5ec12f1d-f3c2-48dd-b137-a33969c60788 resume_offset=4345856
+
+sudo update-initramfs -u #To update the configurations...
+
+>>test hibernate via:
+sudo systemctl hibernate
+#source original first @ youtube: https://www.youtube.com/watch?v=XckJEFTmxuM
+#source of the original article: https://abskmj.github.io/notes/posts/pop-os/enable-hibernate/
+#system76 guide on fixing booloader: fixed my issue of booloader, yikes: 
+https://support.system76.com/articles/bootloader/#:~:text=Repair%20the%20Bootloader%20Edit%20on,the%20operating%20system%20started%20up.
+
+#official ubuntu's guide(as popos is based on ubuntu20), this also is very uptodate and good info:
+https://help.ubuntu.com/community/UEFI
+
+
+
+
+
+
+
+
+
+
+
+#How to set my linux partition's boot flag as *bootable*: follow this answer: 
+https://unix.stackexchange.com/a/343497
+
+# fdisk -l #shows you various partitions and their boot flag too.

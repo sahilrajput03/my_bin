@@ -1,7 +1,15 @@
+## installation guide from yarn for ubuntu using ppa thing:
+
+https://classic.yarnpkg.com/en/docs/install/#debian-stable
+
+## installed pip3 via - sudo apt install python-pip
+pip3 --version
+
 ## using chown
 
 chown array:array file/folder or .
 chown -R array:array file/folder or .
+:FYI - The signature is user:group
 
 ## git unstage: use binary `gu` from now onwards, it'll unstage everything even if you are in a nested folder of the git repo.
 

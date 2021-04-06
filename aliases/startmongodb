@@ -1,0 +1,4 @@
+#!/bin/bash
+set -x
+sudo systemctl restart mongod
+# MONGODB_URI=mongodb://localhost/fso1
