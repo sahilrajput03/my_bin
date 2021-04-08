@@ -1,3 +1,9 @@
+## You must set emmet's setting for:
+
+`  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly"`
+as, this will not show emmet abbreviation in intellisense, and also you should set a hotkey for emmet exapansion as `ctrl+e`, yikes!s
+
+
 ## installation guide from yarn for ubuntu using ppa thing:
 
 https://classic.yarnpkg.com/en/docs/install/#debian-stable
