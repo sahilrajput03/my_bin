@@ -1,0 +1,6 @@
+#!/bin/bash
+set -x
+air /usr/bin/google-chrome --user-agent="Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.77 Large Screen Safari/534.24 GoogleTV/092754 Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.77 Large Screen Safari/534.24 GoogleTV/092754" youtube.com/tv#
+
+#src: https://user-agents.net/string/mozilla-5-0-x11-linux-i686-applewebkit-534-24-khtml-like-gecko-chrome-11-0-696-77-large-screen-safari-534-24-googletv-092754-mozilla-5-0-x11-linux-i686-applewebkit-534-24-khtml-like-gecko-chrome-11-0-696-77-large-sc-34364f9a329a08ca885cc1516fade9647fc84b9f
+#src: youtube video: https://www.youtube.com/watch?v=0SwiSxuE0Sg&t=141s

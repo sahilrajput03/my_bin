@@ -1,3 +1,40 @@
+## insatlling kvm in popos 
+
+sudo apt install qemu-kvm
+
+Now to install a gui to handle kvm, you must install "Virtual Machine Manager" from the pop shop or install it via below command - 
+sudo apt install virt-manager
+
+Also, I had problems with directly opening virtd-manager via launcher or via cli virt-manager, but this problem is solved by opening it via - `sudo virt-manager`, yikes!
+* A simple fix for this could be like, add an alias to your .bashrc file, i.e., 
+alias virt-manager='sudo virt-manager'
+, yikes!!, and problem is solved for ever, and now your qemu must be connected to virt-manager(UI for kvm, yikes!).
+
+## Firefox extensions
+
+Tip: Ctrl+shift+a to open addons in firefox!
+
+* Extension: SuprHotKeys by Gaurav Kumar
+
+Select any text and use ctrl+shift+space to search for it using google, yikes!!.
+
+* Extension: Move Tab Hotkeys by Jonathon Merz
+
+	Default Hotkeys:
+
+	    Alt+Shift+Left: Move tab one to the left, wrapping to the right end if the tab is currently in the first position
+	    Alt+Shift+Right: Move tab one to the right, wrapping to the left end if the tab is currently in the last position
+	    Alt+Shift+0: Move tab to the start of the tab bar
+	    Alt+Shift+9: Move tab to the end of the tab bar
+
+* Extension: Pin Unpin Tab by Jayesh Bhoot;; src: https://addons.mozilla.org/en-US/firefox/addon/pinunpin-tab/
+Note: this extension already comes up bundled with alt+p keyboard shortcut, you can configure it to some other shortcut too. Remember to set different hotkey, press ctrl+shift+a to open addons, and click the gears button in top right, and then choose "Manage Extension Shortcuts".
+
+## using snowpack
+
+`npx create-snowpack-app my-react-app --template @snowpack/app-template-react`
+
+
 ## You must set emmet's setting for:
 
 `  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly"`

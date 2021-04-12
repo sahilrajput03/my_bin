@@ -1,0 +1,22 @@
+#!/bin/bash
+echo '
+sudo shutdown -P +60
+
+That will wait 60 mins before starting the shutdown sequence.
+
+--
+
+You could do:
+
+sudo shutdown -P 1:00
+
+to shutdown at 1 AM and
+
+--
+
+sudo shutdown now
+
+to shutdown now.
+
+~sahil
+'
