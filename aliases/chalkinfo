@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+firefox https://gist.github.com/sahilrajput03/2c77358089cd2eb23a62dd463facfb71

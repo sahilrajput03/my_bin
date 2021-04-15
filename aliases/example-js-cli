@@ -1,0 +1,39 @@
+#!/bin/node
+let args = process.argv.slice(2);
+// :: Debug
+// console.log(args);
+
+const chalk = require("chalk");
+const {exec} = require("child_process");
+const {log} = console;
+
+// :: Get sudo permissions on program start.
+// get_sudo_permissions(); // Use this only if you need sudo permissions for your command.
+
+// :: My cli
+execute_command("ls -la", {debug: 0}); // <== 0 means false, 1 means true.
+
+// :: Useful functions below
+const get_sudo_permissions = () => {
+  exec("sudo echo Thanks for sudo permissions...", (e, so, se) => {
+    log(so);
+  });
+};
+
+function execute_command(command, options) {
+  const {debug} = options;
+  exec(command, (error, stdout, stderr) => {
+    if (error) {
+      debug && log(chalk.red("error:"));
+      log(error.message);
+      return;
+    }
+    if (stderr) {
+      debug && log(chalk.redBright("stderr:"));
+      log(stderr);
+      return;
+    }
+    debug && log(chalk.green("stdout:"));
+    log(stdout);
+  });
+}

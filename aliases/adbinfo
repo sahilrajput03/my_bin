@@ -1,0 +1,9 @@
+#!/bin/bash
+# set -x
+echo "
+::Short notes ~sahil
+adb devices               # Show connected devices.
+adb connect 192.168.18.9  # Connect to device.
+adb disconnect            # Disconnect all devices.
+adb tcpip 5555            # Connect over cable.
+"

@@ -1,3 +1,11 @@
+## Enable auto rename tag(for html), now vscode has builtin support for this
+
+enable it via searching for "editor.linkedEditing" in settings, and enable it.
+
+## Install workrave from pop shop
+
+Yikes!!
+
 ## insatlling kvm in popos 
 
 sudo apt install qemu-kvm
@@ -9,6 +17,7 @@ Also, I had problems with directly opening virtd-manager via launcher or via cli
 * A simple fix for this could be like, add an alias to your .bashrc file, i.e., 
 alias virt-manager='sudo virt-manager'
 , yikes!!, and problem is solved for ever, and now your qemu must be connected to virt-manager(UI for kvm, yikes!).
+src: https://askubuntu.com/a/731709/702911
 
 ## Firefox extensions
 
