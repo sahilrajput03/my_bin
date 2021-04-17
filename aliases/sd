@@ -1,0 +1,8 @@
+#!/bin/bash
+#set -x
+snowpack dev
+# snowpack is really 0 config start setup in any folder with hot reload feature for both .html and .css files out of the box.(unlike live-server which has hot-reload only for html file and use complete reload for css files)
+#note: snowpack dev server live-loads the js, css, html files for chrome but not firefox(atleast in latest edition of firefox), so use insted `pd` i.e., alias for `parce index.html --open` and it works for firefox and chrome for hot-reload i.e., update without actual complete page reload, yikes!
+
+# install snowpack via: 
+# sudo npm i -g snowpack

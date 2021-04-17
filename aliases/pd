@@ -1,0 +1,5 @@
+#!/bin/bash
+set -x
+parcel index.html --open
+# Install parcel via-
+# sudo npm install -g parcel-bundler

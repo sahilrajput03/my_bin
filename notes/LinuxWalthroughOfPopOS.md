@@ -1,3 +1,15 @@
+
+## run script on user login(for setting `Always on Visible Workspace` for emoji-picker)
+
+src: https://unix.stackexchange.com/a/56088
+
+my notes: Simply make an executable script say `myscript1.sh` (with #!/bin/bash shebang at file top) and copy it to ` /etc/profile.d` directory and you are done.
+
+## Minimise window?
+
+Added shortcut win+x (in keyboard shorcuts in pop os settings) to hide active window, yikes!!
+
+
 ## Enable auto rename tag(for html), now vscode has builtin support for this
 
 enable it via searching for "editor.linkedEditing" in settings, and enable it.

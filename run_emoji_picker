@@ -1,8 +1,23 @@
-#Yikes, this all setup works nice.!!!!!(Note: if you want this program to search in further desktops too, specify them like below.., yikes!!)
+#!/bin/bash
 xdotool search --desktop 0 --classname emoji-picker windowactivate || \
 xdotool search --desktop 1 --classname emoji-picker windowactivate || \
 xdotool search --desktop 2 --classname emoji-picker windowactivate || \
 xdotool search --desktop 3 --classname emoji-picker windowactivate || \
 emoji-picker
+#Run devilspie2 for once only VIA global script - `run-devilspie2`
+#devilspie2 --folder ~/my_bin/files/devilspie2
 
-#Backup: xdotool search --classname emoji-picker windowactivate || emoji-picker
+# devilspie2
+# It enables 'Always on visible workspace' feature for gnome desktop, for my application `emoji-picker`.
+# Note: use `ctrl+x` hotkey to hide any window(you get to configure it manually in popos settings though), so use it with this too, to hide it.
+# Guide to enable "Always on Visile Workspace" from below source:
+# https://www.reddit.com/r/Ubuntu/comments/9yt88g/always_on_visible_workspace_by_default/ea4wsvd?utm_source=share&utm_medium=web2x&context=3
+# Install devilspie2:
+# sudo apt-get install devilspie2
+
+#xdotool
+# Backup: xdotool search --classname emoji-picker windowactivate || emoji-picker
+# Yikes, this all setup works nice.!!!!!(Note: if you want this program to search in further desktops too, specify them like below.., yikes!!)
+
+#Do checkout interesting thing but isn't idea for emoji-picker as its title keeps chaning when we type anything, :(
+# https://askubuntu.com/a/185880/702911
