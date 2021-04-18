@@ -1,3 +1,6 @@
 #!/bin/bash
 devilspie2 --folder ~/my_bin/files/devilspie2
 # This file is configure to run on system startup(possible user login event though), and now emoji-picker just open with "Always on visible workspace".
+# I am using the above command directly in the ~/.profile file so whenever this user array logs in, the comamand will execute, yikes! NOTE: I have used `&` in the end of above command as:
+devilspie2 --folder ~/my_bin/files/devilspie2 &
+# so that the login scripts by linux execute in as usual order, else other scripts wait for all the commands to finish but out devilspie2 is a non-terminating process command.

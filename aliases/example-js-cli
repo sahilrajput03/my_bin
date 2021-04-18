@@ -21,7 +21,7 @@ const get_sudo_permissions = () => {
 };
 
 function execute_command(command, options) {
-  const {debug} = options;
+  const {debug} = options || {debug: false};
   exec(command, (error, stdout, stderr) => {
     if (error) {
       debug && log(chalk.red("error:"));

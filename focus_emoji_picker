@@ -1,0 +1,41 @@
+#!/bin/bash
+# gdbus is a gnome internal cli that exposes javascript api to be used, yikes!
+# src: https://unix.stackexchange.com/a/635740 - How to get a list of active windows when using wayland
+# src2: https://superuser.com/a/1627429/776589 - Bash command to focus a specific window
+# ################
+# Note: In below code have used ``.find(mw=>mw.get_wm_class().includes('Emoji Picker'));`` which has method ``get_wm_class()`` in the answer they have title though, and in my case title changes(emoji-picker) when i select any emoji or search anything there, so window name is constant i.e., Emoji Picker. 
+gdbus call \
+  --session \
+  --dest org.gnome.Shell \
+  --object-path /org/gnome/Shell \
+  --method org.gnome.Shell.Eval "
+var mw =
+  global.get_window_actors()
+    .map(w=>w.meta_window)
+    .find(mw=>mw.get_wm_class().includes('Emoji Picker'));
+mw && mw.activate(0)"
+
+# ################
+# xdotool search --desktop 0 --classname emoji-picker windowactivate || \
+# xdotool search --desktop 1 --classname emoji-picker windowactivate || \
+# xdotool search --desktop 2 --classname emoji-picker windowactivate || \
+# xdotool search --desktop 3 --classname emoji-picker windowactivate || \
+# emoji-picker
+# #################
+#Run devilspie2 for once only VIA global script - `run-devilspie2`
+#devilspie2 --folder ~/my_bin/files/devilspie2
+
+# devilspie2
+# It enables 'Always on visible workspace' feature for gnome desktop, for my application `emoji-picker`.
+# Note: use `ctrl+x` hotkey to hide any window(you get to configure it manually in popos settings though), so use it with this too, to hide it.
+# Guide to enable "Always on Visile Workspace" from below source:
+# https://www.reddit.com/r/Ubuntu/comments/9yt88g/always_on_visible_workspace_by_default/ea4wsvd?utm_source=share&utm_medium=web2x&context=3
+# Install devilspie2:
+# sudo apt-get install devilspie2
+
+#xdotool
+# Backup: xdotool search --classname emoji-picker windowactivate || emoji-picker
+# Yikes, this all setup works nice.!!!!!(Note: if you want this program to search in further desktops too, specify them like below.., yikes!!)
+
+#Do checkout interesting thing but isn't idea for emoji-picker as its title keeps chaning when we type anything, :(
+# https://askubuntu.com/a/185880/702911

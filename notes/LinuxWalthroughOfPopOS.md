@@ -1,5 +1,33 @@
+gdbus call \
+  --session \
+  --dest org.gnome.Shell \
+  --object-path /org/gnome/Shell \
+  --method org.gnome.Shell.Eval "
+var mw =
+  global.get_window_actors()
+    .map(w=>w.meta_window)
+    .find(mw=>mw.get_wm_class().includes('Emoji Picker'));
+mw && mw.activate(0)"
 
-## run script on user login(for setting `Always on Visible Workspace` for emoji-picker)
+
+
+
+
+## Focus windows using wmctrl
+
+wmctrl -l #shows list of windows with window id, window title, etc.
+
+wmctrl -a <window-id> -i #This will focus to the desirable window, but if thats a floating window i.e., "Always on visible workspace" then wmctrl just switch to the desktop in which it was opened at first. :( And that breaks what i want it to do for emoji-picker, time-spend to fix this: 8hrs.
+
+Get list of currently opened windows using this tool as https://unix.stackexchange.com/a/635740 and its pretty.
+
+## To run any program or a series of command at user startup:
+
+Just put `command_shit` in the end of your `~/.profile` file, and it works out of the box, yikes!
+Do remember to put & in the end of a command that is supposed to be non-terminating process command, else your login process will be disturbed coz linux waits for .profile script to finish executing and conitue the login essential processes thereby.
+
+
+## Run 🏇︎ 🏇︎script on user login(for setting `Always on Visible Workspace` for emoji-picker)
 
 src: https://unix.stackexchange.com/a/56088
 
