@@ -3,3 +3,4 @@ set -x
 parcel index.html --open
 # Install parcel via-
 # sudo npm install -g parcel-bundler
+# Note to be able to enable hot-reloading for html+css, you must add a stylesheet link to html document otherwise even hot-refresh won't work. :LOL:
