@@ -6,6 +6,7 @@ alias cdCssDesignTrail='cd /home/array/Documents/github-repos-2021/cssDesignTrai
 alias snips='cd /home/array/my_bin/snips'
 alias lsa__='ls -a -I . -I .. --color'
 alias virt-manager='sudo virt-manager'
+alias lsryikes='live-server --ignore=/home/array/Documents/github-repos-2021/cssDesignTrail/course-conquering-responsive-layouts/challenge09'
 
 ##For other stuff
 alias gch='git checkout' #This is good for autocompletion in fish!

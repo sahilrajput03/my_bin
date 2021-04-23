@@ -1,0 +1,2 @@
+# Disable: "Preview Response Panel Take Focus" for REST Client in vscode settings, makes life lot easier with request testing.
+# Use shortcut ctrl+r to make request to the backend.(I remapped the ctrl+alt+r to ctrl+r). Yo!

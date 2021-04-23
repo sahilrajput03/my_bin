@@ -1,17 +1,8 @@
-gdbus call \
-  --session \
-  --dest org.gnome.Shell \
-  --object-path /org/gnome/Shell \
-  --method org.gnome.Shell.Eval "
-var mw =
-  global.get_window_actors()
-    .map(w=>w.meta_window)
-    .find(mw=>mw.get_wm_class().includes('Emoji Picker'));
-mw && mw.activate(0)"
+## Move windows across same group, multiple groups, and shrink/expand selection
 
-
-
-
+::alt+shift+right/left : To expand/shrink selection
+::ctrl+alt+shift+right/left: Move current tab to left/right like as you do in chrome/firefox.
+::(Inbuild though)ctrk+k left/right/up/down: Move current to different groups of tabs, yikes!
 
 ## Focus windows using wmctrl
 
