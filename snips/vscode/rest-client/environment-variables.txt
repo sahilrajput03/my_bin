@@ -1,0 +1,13 @@
+//Put this code in .vscode/settings.json file in any project root directory and DON'T FORGET TO DELETE THIS LINE.
+//file src: https://marketplace.visualstudio.com/items?itemName=humao.rest-client#environment-variables
+{
+  "rest-client.environmentVariables": {
+    "development": {
+      "url": "http://localhost:3000"
+    },
+    "production": {
+      "url": "http://localhost:80"
+    }
+  }
+}
+
