@@ -8,6 +8,8 @@ alias nn='nodemon -q'
 alias lsa__='ls -a -I . -I .. --color'
 alias virt-manager='sudo virt-manager'
 alias lsryikes='live-server --ignore=/home/array/Documents/github-repos-2021/cssDesignTrail/course-conquering-responsive-layouts/challenge09'
+# apps installed as flatpack in popshop are found in directory: ~/.local/share/flatpak/exports/share/applications , src: https://askubuntu.com/a/1167893/702911
+alias cdflatpack='cd ~/.local/share/flatpak/exports/share/applications'
 
 ##For other stuff
 alias gch='git checkout' #This is good for autocompletion in fish!

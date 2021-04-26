@@ -1,3 +1,7 @@
+## Started Using copyq as clipboard manager
+
+Started using `Copyq` as Cclipboard manager and assigned ``ctrl+shift+q``, also ``q`` is more relatable to the name ``copyq``  for global shortcut binding to show/hide the copyq, yikes!!!
+
 ## Move windows across same group, multiple groups, and shrink/expand selection
 
 ::alt+shift+right/left : To expand/shrink selection

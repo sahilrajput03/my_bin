@@ -1,1 +1,4 @@
 I have enabled devilspie2 on startup using above screenshot.
+I added below line to ~/.profile file so that copyq is opened on user login.
+flatpak run com.github.hluk.copyq &
+note, i added the last & in the end of the command as it would keep the script executing otherwise the flow of execution will be stopped, and that is what you don't want..!!
