@@ -1,3 +1,12 @@
+## insatll sxhkd
+
+```
+sudo apt install sxhkd
+sxhkd
+```
+
+src: https://github.com/baskerville/sxhkd
+
 ## Started Using copyq as clipboard manager
 
 Started using `Copyq` as Cclipboard manager and assigned ``ctrl+shift+q``, also ``q`` is more relatable to the name ``copyq``  for global shortcut binding to show/hide the copyq, yikes!!!

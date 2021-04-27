@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+cp ~/.config/i3/config ~/my_bin/files/config-file-i3/

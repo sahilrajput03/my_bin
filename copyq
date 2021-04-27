@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+flatpak run com.github.hluk.copyq $*

@@ -1,4 +1,4 @@
-##!/bin/bash
+#!/bin/bash
 # :: ^^ Note you have to remove #!/bin/bash from this file to be able to run it via gnome-shortcuts, yikes!
 # amazing link: https://superuser.com/a/1627429/776589
 # also see the "See also" links they are awesome to understand the js api of gnome, yikes!

@@ -1,0 +1,5 @@
+super + shift + equal
+ gedit
+
+super + u
+ /home/array/my_bin/run_emoji_picker

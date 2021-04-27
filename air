@@ -1,3 +1,4 @@
 #!/bin/bash
 set -x
-nohup "$@" > /dev/null &
+nohup "$@" > /dev/null 2>&1 &
+#src: https://stackoverflow.com/a/10408906/10012446
