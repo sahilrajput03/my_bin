@@ -1,3 +1,22 @@
+## Using i3lock from cli: 
+Learn more about i3lock cli options @ `man i3lock` command.
+
+i3lock -p default
+# ^^ enable mouse pointer to display
+
+i3lock -i ~/my_bin/files/wallpapers/geometric.png
+# ^^ only png images.
+
+i3lock -u
+# ^^ for no keyboard type alert or verifying or failed notification, yikes!! secret things..!!
+
+i3lock -f
+#^^ shows failed attempts
+
+
+i3lock -e
+## ^^ ignore empty password.
+
 ## Convert to desired resolution in linux(for i3lock)
 
 convert -scale 1920x1080 unleash-potential.png unleash-potential-scaled-lockscreen.png
