@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+cp ~/.gitconfig ~/my_bin/files/
