@@ -1,0 +1,35 @@
+## Convert to desired resolution in linux(for i3lock)
+
+convert -scale 1920x1080 unleash-potential.png unleash-potential-scaled-lockscreen.png
+// To get resolution for current desktop, use below command:
+
+xdpyinfo | grep 'dimensions:'
+
+
+
+
+
+
+
+## Convert webp to png
+
+src: https://winaero.com/convert-webp-png-linux/
+
+ffmpeg -i file.webp ouputfile.png
+
+//or use
+
+dwebp file.webp -o file.png
+// you must have installed: apt install webp
+
+
+
+
+
+
+
+## convert png to webp
+
+cwebp file.png -o file.webp
+// you must have installed: apt install webp
+
