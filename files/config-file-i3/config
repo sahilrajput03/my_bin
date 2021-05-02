@@ -1,5 +1,6 @@
 ############ ~sahil ##############
-# To use ctrl key anywhere in i3 config, use `Control`, yo!!
+# For using `ctrl` key anywhere in i3 config, use `Control`, yo!!
+# Having two windows right and left in tile modde, just use ctrl+b to make each of these horizontal split containers, yikes!! Now any new window will adjust in each of these in horizontal splitting (based upon what window you have currently in focus).
 
 ### help getting a key name? try: `xev -event keyboard` and press key to know about that key.
 #src: ^^ https://www.reddit.com/r/i3wm/comments/4yjold/how_would_i_create_a_keyboard_binding_for_the/
@@ -119,7 +120,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+shift+v split h
+bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
