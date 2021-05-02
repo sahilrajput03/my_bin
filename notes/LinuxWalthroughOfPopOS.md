@@ -1,3 +1,16 @@
+## using fallback in bash is same as js though
+
+echo Correct command || echo Command falied message...
+Output:
+Correct command
+Command failed message...
+
+
+ech Correct command || echo Command falied message...
+Output:
+no command ech found.(linux error shit)
+Command failed message...
+
 ## Using i3lock from cli: 
 Learn more about i3lock cli options @ `man i3lock` command.
 

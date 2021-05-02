@@ -1,0 +1,17 @@
+# This file is sourced in ~/.profile, say ==>  source ~/my_bin/sources/profile-source
+# Note i have put the & in the end of below command so as to let this script fininsh executing and everything works good as well.
+# DONT" FORGET TO USE & IN THE END OF ANY COMMAND, else the execution flow will stop, hence user startup would not occur in normal way. ~sahil
+devilspie2 --folder ~/my_bin/files/devilspie2 & 
+flatpak run com.github.hluk.copyq &
+emoji-picker &
+#sxhkd -c ~/my_bin/files/sxhkdrc &
+
+feh --bg-scale ~/my_bin/files/wallpapers/unleash-potential.webp || echo "Failing is ok though."
+# ^^ src of the feh(wallpaper manager): https://wiki.archlinux.org/index.php/Feh#As
+# referece found for feh at https://faq.i3wm.org/question/6/how-can-i-set-a-desktop-background-image-in-i3.1.html
+
+#workrave & 
+# ^^^^ works well though.
+
+~/my_bin/run_workrave || echo workrave failed...
+#workrave & || echo workrave is not installed.

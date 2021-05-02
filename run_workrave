@@ -1,0 +1,4 @@
+#!/bin/bash
+#The purpose of using the run_workrave in .profile file is that using a command like doesn't work well and blocks the script execution => 	workrave & || echo command failed  {FAILS}
+#set -x
+workrave &
