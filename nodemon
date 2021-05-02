@@ -1,0 +1,7 @@
+#!/bin/bash
+#set -x
+echo "Tip: Use nn fileName.js/ts instead."
+/usr/local/bin/nodemon $@
+#NOTE: 🤺︎🤺︎🤺︎Change the nodemon bin location if you ever face error like nodemon not found.
+#Also, to be able to run you must have .tsconfig in current or any parent folder and have ts-node installed globally so nodmeon can use it.., do that vi below command
+# npm i -g ts-node
