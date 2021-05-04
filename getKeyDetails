@@ -1,0 +1,5 @@
+#!/bin/bash
+set -x
+xev -event keyboard
+#also you can use ``xmodmap -pk``  #to get a list of all key codes, yikes!!
+#src: https://ictsolved.github.io/remap-key-in-linux/

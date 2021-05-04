@@ -1,4 +1,10 @@
-## Z
+## Popular linux repos for softwares
+
+snap and flathub are two popular repos for linux softwares.
+
+https://snapcraft.io/
+
+https://flathub.org/
 
 ## To use cp/mv for copy/move multiple files/folders from a source to target use below methods, yikes!!
 

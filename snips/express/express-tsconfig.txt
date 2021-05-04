@@ -7,7 +7,7 @@
 		"esModuleInterop": true,
 		"strict": true,
 		"noImplicitAny": false
-// turn this off anytime you want types for everything.
+// Turn ^^ this to true anytime you want types for everything.
 	}
 }
 

@@ -3,6 +3,9 @@
 // 🤠︎ ./run-parcel
 
 const Bundler = require('parcel-bundler')
+const opn = require('parcel-bundler/src/utils/openInBrowser')
+const useOpenInBrowser = 1 // 🏇︎🏇︎ turn it to 1/true to open browser on starting parcel dev server.
+
 const express = require('express')
 const htmlFiles = require('./run-parcel-util')
 
@@ -57,6 +60,7 @@ async function main() {
   const port = Number(process.env.PORT || 1234)
   app.listen(port)
   console.log(`listening at http://localhost:${port}`)
+  useOpenInBrowser && opn('http://localhost:1234/')
 }
 
 main()

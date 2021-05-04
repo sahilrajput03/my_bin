@@ -1,4 +1,25 @@
 ############ ~sahil ##############
+
+#Bindings love: 
+#map capslock key to escape(yes you need to do two commands for disabling capslock key): 
+#NOTE: Using capslock will also turn capslock off if its on already(say you turned it on using r_ctrl):
+exec_always --no-startup-id xmodmap -e "clear lock"
+exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+
+exec_always --no-startup-id xmodmap -e "keycode 105 = Caps_Lock NoSymbol Caps_Lock"
+#^^ 🧿︎toggles capslock via r_ctrl key.
+
+#🧿︎Now, i have good setup of completely changed capslock to esc and esc to caplock keys🧿︎
+#Fyi: Original keycodes:: Capslock: 66, Escape: 9, R_Control: 105.
+
+#src1: https://unix.stackexchange.com/a/426787
+#src2: https://ictsolved.github.io/remap-key-in-linux/
+#src3: https://unix.stackexchange.com/questions/199266/how-to-permanently-remap-caps-lock-to-esc-in-x11
+#src4: https://faq.i3wm.org/question/1496/change-caps-lock-to-esc-in-i3.1.html
+#exec_always --no-startup-id xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"
+#^^ This is to toggle capslock via esc key, but its little annoying to get habit of esc as capslock key and rather there would be unexpected accidental muscle binding error due to that, so i rather toggle caplock key via r_ctrl key and keep esc key as esc key only.
+#############################################
+
 # For using `ctrl` key anywhere in i3 config, use `Control`, yo!!
 # Having two windows right and left in tile modde, just use ctrl+b to make each of these horizontal split containers, yikes!! Now any new window will adjust in each of these in horizontal splitting (based upon what window you have currently in focus).
 
@@ -40,8 +61,16 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # screen capture with gnome-screenshot, coz gnome is not bad although :LOL: :
-bindsym Print exec gnome-screenshot -i
-#To see all available options with gnome-screenshot, just use -h option with the binary.
+#bindsym Print exec gnome-screenshot -i
+# ^^ That does a interactive dialog box and offers all options though. To see all available options with gnome-screenshot, just use -h option with the binary.
+
+#bindsym Control+Print exec gnome-screenshot -c
+# Todo: add mouse cursor in all below keybindings.
+#gnome-screenshot -c   #to clipboard
+#gnome-screenshot -w   #active window
+#gnome-screenshot -a #custom area
+#gnome-screenshot -p #include mouse pointer
+#gnome-screenshot -i   #set options interactively, yikes!!!
 
 ################~sahil ###########
 
