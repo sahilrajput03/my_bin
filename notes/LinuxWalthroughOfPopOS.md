@@ -1,3 +1,35 @@
+## Z
+
+## To use cp/mv for copy/move multiple files/folders from a source to target use below methods, yikes!!
+
+cp -t ~/my_target_folder 
+
+## Gnome screen shot cli usage::
+
+gnome-screenshot -c 	#to clipboard
+gnome-screenshot -w 	#active window
+gnome-screenshot -a	#custom area
+gnome-screenshot -p	#include mouse pointer
+gnome-screenshot -i 	#set options interactively, yikes!!!
+
+
+## List of screenshot capture utils @ arch linux docs: 
+https://wiki.archlinux.org/title/Screen_capture
+
+
+## 9 best screencast softwares:
+ https://itsfoss.com/best-linux-screen-recorders/
+ 
+## 10 best screencast softwares:
+ https://www.tecmint.com/take-or-capture-desktop-screenshots-in-ubuntu-linux/
+ 
+ 
+## shutter is not very popular or developed, magick is very popular and developed though.
+ 
+ 
+##  Magick basic usage: (i installled it to my_bin though but using gnome-screenshot for now with i3):
+ https://legacy.imagemagick.org/Usage/basics/
+
 ## using fallback in bash is same as js though
 
 echo Correct command || echo Command falied message...

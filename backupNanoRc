@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+cp ~/.nanorc ~/my_bin/files/.nanorc

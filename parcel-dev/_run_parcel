@@ -1,0 +1,62 @@
+#!/usr/local/bin/node
+// 🤠︎ Testing: Use => nodemon run-parcel --watch run-parcel
+// 🤠︎ ./run-parcel
+
+const Bundler = require('parcel-bundler')
+const express = require('express')
+const htmlFiles = require('./run-parcel-util')
+
+async function main() {
+  const htmlFilePaths = htmlFiles
+
+  // 🧸︎ debugging when parcel doesn't built, the reason could be a faulty html file, Yikes!! parcel is so 🧸︎love🧸︎..!!
+  // const htmlFilePaths = htmlFiles.slice(0, 900)
+  // console.log({htmlFilePaths})
+
+  // const paths = ['a.html', 'b.html', './z-index-basics/index.html']
+  const bundler = new Bundler([
+    // 'index.html', //🛑︎ parcel isn't compiling index.html file on changes, idk why... doesn't work to update idk why , parcel bug.
+    ...htmlFilePaths, // 🤹︎ This works too though, but needed to get paths of all .html files to make the anchor links on hompage.
+    // '*.html', // 🛑︎ This doesn't work as expected(live-refresh isn't working with this idk why..?) as mentioned on parcel docs.
+  ])
+
+  const app = express()
+
+  app.get('/', (req, res, next) => {
+    const html = htmlFilePaths
+      .map((file) => {
+        if (file.includes('/')) {
+          const pathArray = file.split('/')
+          const _file = pathArray.pop()
+          const folder = pathArray.join('/') + '/'
+
+          return `${folder} <a href="${file}">${_file}</a>`
+        } else {
+          return `<a href="${file}">${file}</a>`
+        }
+      })
+      .reduce((prev, current) => {
+        return prev + '<br/>' + current
+      })
+
+    // const html = htmlFilePaths
+    // 	.map((file) => `<a href="${file}">${file}</a>`)
+    // 	.reduce((prev, current) => {
+    // 		return prev + '<br/>' + current
+    // 	})
+
+    res.send(html)
+
+    // 🧸︎ Default form github issue of parcel repo though..
+    // req.url = '/index.html'
+    // app._router.handle(req, res, next)
+  })
+
+  app.use(bundler.middleware())
+
+  const port = Number(process.env.PORT || 1234)
+  app.listen(port)
+  console.log(`listening at http://localhost:${port}`)
+}
+
+main()

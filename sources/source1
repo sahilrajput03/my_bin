@@ -5,7 +5,7 @@ alias fishbashrc_source='. ~/.config/fish/config.fish'
 alias cdCssDesignTrail='cd /home/array/Documents/github-repos-2021/cssDesignTrail'
 alias snips='cd /home/array/my_bin/snips'
 alias nn='/usr/local/bin/nodemon'
-#alias nn='/usr/local/bin/nodemon -q'
+alias nnq='/usr/local/bin/nodemon -q'
 alias lsa__='ls -a -I . -I .. --color'
 alias virt-manager='sudo virt-manager'
 alias lsryikes='live-server --ignore=/home/array/Documents/github-repos-2021/cssDesignTrail/course-conquering-responsive-layouts/challenge09'
@@ -17,7 +17,7 @@ alias gch='git checkout' #This is good for autocompletion in fish!
 alias c='clear'
 
 # :: Path:
-export PATH="/home/$USER/my_bin:/home/$USER/my_bin/aliases:$PATH"
+export PATH="/home/$USER/my_bin:/home/$USER/my_bin/aliases:/home/$USER/my_bin/parcel-dev:$PATH"
 
 # :: Environement Variables Below:
 #export NODE_PATH=/usr/lib/node_modules #This is good if you aren't using n version manager.
