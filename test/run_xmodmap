@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+/usr/bin/xmodmap /home/array/.Xmodmap
