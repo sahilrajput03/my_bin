@@ -1,0 +1,6 @@
+#!/bin/bash
+set -x
+xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+xmodmap -e "clear lock"
+
+xmodmap -e "keycode 105 = Caps_Lock NoSymbol Caps_Lock"

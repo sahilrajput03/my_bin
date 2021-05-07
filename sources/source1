@@ -13,6 +13,9 @@ alias lsryikes='live-server --ignore=/home/array/Documents/github-repos-2021/css
 # apps installed as flatpack in popshop are found in directory: ~/.local/share/flatpak/exports/share/applications , src: https://askubuntu.com/a/1167893/702911
 alias cdflatpack='cd ~/.local/share/flatpak/exports/share/applications'
 
+# Setting caplok and right ctrl things for better vim, ultimate hack...!!
+~/my_bin/air_silent ~/my_bin/setupVimCapslock
+
 ##For other stuff
 alias gch='git checkout' #This is good for autocompletion in fish!
 alias c='clear'
