@@ -12,7 +12,6 @@ xdpyinfo | grep 'dimensions:'
 
 
 ## Convert webp to png
-
 src: https://winaero.com/convert-webp-png-linux/
 
 ffmpeg -i file.webp ouputfile.png
@@ -33,3 +32,16 @@ dwebp file.webp -o file.png
 cwebp file.png -o file.webp
 // you must have installed: apt install webp
 
+
+
+
+##Change resolution of a screen when we have multiple montiors:
+xrandr 
+
+FYI: You can set a wallpaper with property --bg-fill with ``feh`` and now the wallpaper is set accordingly 🏅︎🏅︎ well, yikes!!
+
+xrandr --output HDMI1 --mode 1920x1080
+xrandr --output HDMI1 --mode 1280x768
+xrandr --output HDMI1 --mode 1920x1080
+xrandr --output eDP1 --mode 1368x768
+#This will set the resolution(you would notice the asterist has changed to new screen resolution now)

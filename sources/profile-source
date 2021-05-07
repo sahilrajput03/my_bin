@@ -7,7 +7,9 @@ emoji-picker &
 #
 #sxhkd -c ~/my_bin/files/sxhkdrc &
 #
-feh --bg-scale ~/my_bin/files/wallpapers/unleash-potential.webp || echo "Failing is ok though."
+##feh --bg-scale ~/my_bin/files/wallpapers/unleash-potential.webp || echo "Failing is ok though."
+## Using above configuration isn't good, as wallpaper doesn't get fix, but 🤹︎below config works pretty🥇︎ well, yikes!!
+#feh --bg-fill  ~/my_bin/files/wallpapers/unleash-potential.webp || echo "Failing is ok though."
 # ^^ src of the feh(wallpaper manager): https://wiki.archlinux.org/index.php/Feh#As
 # referece found for feh at https://faq.i3wm.org/question/6/how-can-i-set-a-desktop-background-image-in-i3.1.html
 #workrave & 
@@ -33,3 +35,10 @@ flameshot &
 #sleep 10 && xmodmap ~/.Xmodmap &
 #sleep 5 && gedit &
 #/home/array/my_bin/test/run_xmodmap
+
+###With testing I was just trying if just reload i3 with profile script execution that might make the capslock toggling work accordingly, but isn't helping as there's no 100% knowing about how many times and for how much time after i should execute the reload of i3 but that didn't help with chaning all the parameters and it doesn't help🥅︎. So I am just trying to be comfortable with esc as the ever using way of vim for ever, yikes!!
+#xmodmap ~/.Xmodmap
+#^^ that does work like else, i.e., everything except the capslock toggling effect is there with this too.
+#sleep 10 && i3-msg reload &
+# ^^ that didn't work idk why, but below worked well though🤺︎🤺︎.
+

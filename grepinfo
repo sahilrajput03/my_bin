@@ -1,0 +1,3 @@
+#!/bin/bash
+#set -x
+echo To do a search text say case insensitivity with grep, use flag -i, for e.g., grep -i 'text'

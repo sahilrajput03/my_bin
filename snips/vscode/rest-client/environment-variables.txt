@@ -1,5 +1,7 @@
-//Put this code in .vscode/settings.json file in any project root directory and DON'T FORGET TO DELETE THIS LINE.
-//file src: https://marketplace.visualstudio.com/items?itemName=humao.rest-client#environment-variables
+// Put this code in .vscode/settings.json file in any project root directory 
+// Also don't forget to delete this line.
+// Also choose the environemnt setup in vscode itself using panel drop down menu.
+// file src: https://marketplace.visualstudio.com/items?itemName=humao.rest-client#environment-variables
 {
   "rest-client.environmentVariables": {
     "development": {

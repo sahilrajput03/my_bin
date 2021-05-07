@@ -1,3 +1,11 @@
+## Get title name and class name of a window ?
+
+execute command ``xprop`` in your terminal and click any window to get all its details.
+For simple shortcut, use 
+xprop | grep 'CLASS'
+
+src: https://www.reddit.com/r/i3wm/comments/3h94t9/how_to_find_a_name_of_a_program_to_use_for/?utm_source=share&utm_medium=web2x&context=3
+
 ## Popular linux repos for softwares
 
 snap and flathub are two popular repos for linux softwares.
@@ -75,7 +83,7 @@ convert -scale 1920x1080 unleash-potential.png unleash-potential-scaled-lockscre
 
 xdpyinfo | grep 'dimensions:'
 
-## Convert webp to png
+## Convert webp image format to png image format.
 
 src: https://winaero.com/convert-webp-png-linux/
 
@@ -95,6 +103,7 @@ cwebp file.png -o file.webp
 src: https://www.maketecheasier.com/use-linux-terminal-as-calculator/
 
 ## insatll sxhkd
+You don't need sxhkd for i3 though.
 
 ```
 sudo apt install sxhkd

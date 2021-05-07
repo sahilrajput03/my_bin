@@ -1,0 +1,6 @@
+#!/bin/bash
+set -x
+echo Use flatpack update com.skype.Client to update the skype app.
+air flatpak run com.skype.Client
+#To disable the unnecessary window which keeps opening when skype's main window get unfocussed, is just to disalbe that window as suggested in this comment: 
+#https://www.reddit.com/r/i3wm/comments/gh7kfz/skype_fix/fqt7yf0?utm_source=share&utm_medium=web2x&context=3

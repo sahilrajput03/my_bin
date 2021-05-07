@@ -1,13 +1,55 @@
 ############ ~sahil ##############
-
+exec_always --no-startup-id feh --bg-fill  ~/my_bin/files/wallpapers/unleash-potential.webp || echo "Failing is ok though."
+# Putting the command "feh ...blah ..blah" doesn't work very well 
+# with .profile file(as in my my_bin/sources/profile-source file), 
+# so putting it here just makes it work superb.
+#
+# Wanna use secondary extended display?, just use below command 
+# once in terminal (note: Not intended to use by uncommenting 
+# below line as it won't execute as i3config command).
+#
+#Fyi: xrandr gives you all the information of connected devices
+# and their info 🏇︎
+#src: Using i3 with multiple monitors(article @ fedoramagazine.org).
+# xrandr --output HDMI1 --auto --right-of eDP1
+# xrandr --output HDMI1 --auto --left-of eDP1
+#^^ Use this one to make the secondary monitor to be placed to
+# the left of desktop.
+#
+#Using xrandr command to be executed by this i3config file only as
+# using with .profile wallpaper might not adjust accordingly coz 
+# i3 is actually loaded after the .profile is loaded, so using the 
+# i3 way of setting the wallpaper is the best bay IMO,
+# yikes, as I don't like to clutter my .profile file.
+exec_always --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
+##
+# Trying new keybindings: like moving workspace from one montior
+# to the other:
+#NOT NEEDED, and IT DIDN't work THOUGH::		bindsys $mod+u move workspace to output right
+#
+# Use command ``i3-msg restart`` or ``i3-msg reload`` to restart i3 or simply use shift+mod+r directly.
+#
+#
 #Bindings love: 
-#map capslock key to escape(yes you need to do two commands for disabling capslock key): 
+#map capslock key to escape(yes you need to do two commands
+# for disabling capslock key): 
+#NOTE: PLEASE USE ctrl+super+r(after each login even) to refresh
+# i3 so that your idk-bug-capslock gets fixed(i.e., toggling
+# persists even when esc is assigned to esc).
+#
 #NOTE: Using capslock will also turn capslock off if its on already(say you turned it on using r_ctrl):
-exec_always --no-startup-id xmodmap -e "clear lock"
-exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 
-exec_always --no-startup-id xmodmap -e "keycode 105 = Caps_Lock NoSymbol Caps_Lock"
+#exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+#exec_always --no-startup-id xmodmap -e "clear lock"
+
+#exec_always --no-startup-id xmodmap -e "keycode 105 = Caps_Lock NoSymbol Caps_Lock"
 #^^ 🧿︎toggles capslock via r_ctrl key.
+
+#For some reason my capslock key doesn't stop its toggling behaviour when 
+# I run xmodmap on startup, so using setxkbmap to turn caps_lock toggle effect, yikes!
+#exec_always --no-startup-id setxkbmap -option caps:none
+
+#_________
 
 #🧿︎Now, i have good setup of completely changed capslock to esc and esc to caplock keys🧿︎
 #Fyi: Original keycodes:: Capslock: 66, Escape: 9, R_Control: 105.
@@ -64,7 +106,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 #bindsym Print exec gnome-screenshot -i
 # ^^ That does a interactive dialog box and offers all options though. To see all available options with gnome-screenshot, just use -h option with the binary.
 
-#bindsym Control+Print exec gnome-screenshot -c
+bindsym Print exec flameshot gui
 # Todo: add mouse cursor in all below keybindings.
 #gnome-screenshot -c   #to clipboard
 #gnome-screenshot -w   #active window
