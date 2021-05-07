@@ -31,6 +31,8 @@ exec_always --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
 #
 #
 #Bindings love: 
+# NOTE:: NOTE:: NOTE:::
+# I am using script setupVimCapslock to set my bindings in the my_bin/sources/source1 and finally this actually fixes the issue, 🤺︎🤺︎ yikes!!
 #map capslock key to escape(yes you need to do two commands
 # for disabling capslock key): 
 #NOTE: PLEASE USE ctrl+super+r(after each login even) to refresh
