@@ -1,3 +1,12 @@
-clear lock
-keycode 105 = Caps_Lock NoSymbol Caps_Lock
-keycode 66 = Escape NoSymbol Escape
+! Best advice for life: read docs, i.e., ``man xmodmap``
+! or read @ onine https://linux.die.net/man/1/xmodmap
+!This line is a valid comment for .Xmodmap file. ~sahil
+!clear lock
+!clear control
+!add control = Caps_Lock Control_L Control_R
+!keycode 66 = Escape Caps_Lock NoSymbol NoSymbol
+
+!clear mod5
+!clear mod1
+!keycode 92 = ISO_Level3_Shift
+!add mod5 = ISO_Level3_Shift Alt_L
