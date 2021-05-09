@@ -4,7 +4,9 @@ alias fishbashrc_cd='cd ~/.config/fish/'
 alias fishbashrc_source='. ~/.config/fish/config.fish'
 alias cdCssDesignTrail='cd /home/array/Documents/github-repos-2021/cssDesignTrail'
 alias snips='cd /home/array/my_bin/snips'
-alias nrt='clear && npm run test'
+alias t='clear && npm run test'
+#alias nt='clear && npm run test'
+alias nr='npm run'
 alias nn='/usr/local/bin/nodemon'
 alias nnq='/usr/local/bin/nodemon -q'
 alias lsa__='ls -a -I . -I .. --color'
@@ -14,8 +16,7 @@ alias lsryikes='live-server --ignore=/home/array/Documents/github-repos-2021/css
 alias cdflatpack='cd ~/.local/share/flatpak/exports/share/applications'
 
 # 🏇︎🏇︎🏇︎🏇︎ Setting capslok as secondary esc key and shift+capslock to toggle capslock actually.....!!
-~/my_bin/air_silent ~/my_bin/setupVimCapslock2
-#~/my_bin/air_silent ~/my_bin/setupRightAltAsLeftAltForFirefoxBug
+~/my_bin/air_silent ~/my_bin/setupVimCapslock
 
 ##For other stuff
 alias gch='git checkout' #This is good for autocompletion in fish!

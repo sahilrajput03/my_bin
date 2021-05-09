@@ -135,9 +135,13 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 8
 
+# src of learningl: https://i3wm.org/docs/userguide.html#fonts ~sahil
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+#font pango:DejaVu Sans Mono 8
+#font pango:Terminus 13px
+# ^^ this good 🥇︎.
+font pango:Fira Code Medium 13px
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.

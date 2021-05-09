@@ -1,0 +1,12 @@
+#!/bin/bash
+# I AM NOT USING THIS FILE IN SOURCES/SORUCE1 COZ I LIKE THE XMOD SETTINGS IN SETUPVIMCAPSLOCK2 FILE INSTEAD.
+# BELOW SCRIPT MAKES capslock to send esc key, and toggle capslock with right ctrl key. BUT I PREFER TO USE setupCapslock2 script as that is what I LIKE MOST...🏇︎🏇︎
+#Documnetation for xmod @ https://wiki.archlinux.org/title/Xmodmap is phenomenal.
+#Use command ``xmodmap`` to get the mapped bindings.
+set -x
+xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+xmodmap -e "clear lock"
+
+xmodmap -e "keycode 105 = Caps_Lock NoSymbol Caps_Lock"
+# making my right alt to send sigals of left alt....
+xmodmap -e "keycode 92 = Alt_L"

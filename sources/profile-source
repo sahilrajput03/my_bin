@@ -1,8 +1,9 @@
 # This file is sourced in ~/.profile, say ==>  source ~/my_bin/sources/profile-source
 # Note i have put the & in the end of below command so as to let this script fininsh executing and everything works good as well.
 # DONT" FORGET TO USE & IN THE END OF ANY COMMAND, else the execution flow will stop, hence user startup would not occur in normal way. ~sahil
-devilspie2 --folder ~/my_bin/files/devilspie2 & 
-flatpak run com.github.hluk.copyq &
+#devilspie2 --folder ~/my_bin/files/devilspie2 & 
+/home/array/my_bin/copyq &
+#flatpak run com.github.hluk.copyq &
 emoji-picker &
 #
 #sxhkd -c ~/my_bin/files/sxhkdrc &

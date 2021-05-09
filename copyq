@@ -1,3 +1,5 @@
 #!/bin/bash
+#src https://github.com/hluk/CopyQ
+# Use flatpack kill com.github.hluk.copyq 					#To kill the running app.
 set -x
 flatpak run com.github.hluk.copyq $*

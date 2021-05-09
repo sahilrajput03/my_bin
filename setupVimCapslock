@@ -1,11 +1,21 @@
 #!/bin/bash
-# BELOW SCRIPT MAKES capslock to send esc key, and toggle capslock with right ctrl key. BUT I PREFER TO USE setupCapslock2 script as that is what I LIKE MOST...🏇︎🏇︎
-#Documnetation for xmod @ https://wiki.archlinux.org/title/Xmodmap is phenomenal.
+#DOCUMENTATION FOR XMOD @ https://wiki.archlinux.org/title/Xmodmap IS PHENOMENAL.
 #Use command ``xmodmap`` to get the mapped bindings.
+#xmodmap docs @web: https://linux.die.net/man/1/xmodmap
+#NOTE USING xmodmap -e in different files and executing them doesn't make it to work idk why..!!
+# xmodmap settings are reset by setxkbmap
 set -x
-xmodmap -e "keycode 66 = Escape NoSymbol Escape"
-xmodmap -e "clear lock"
+#assign esc to capslock..
 
-xmodmap -e "keycode 105 = Caps_Lock NoSymbol Caps_Lock"
-# making my right alt to send sigals of left alt....
-xmodmap -e "keycode 92 = Alt_L"
+#I DON'T KNOW HOW BELOW SCRIPT WORKS, BUT SHIFT+CAPSLOCK IS TOGGLE CAPSLOCK AND CAPSLOCK KEY IS WORKING ADDITIONAL ESC KEY., YIKES!! 
+xmodmap -e "clear lock"
+xmodmap -e "clear control"
+
+xmodmap -e "add control = Caps_Lock Control_L Control_R"
+xmodmap -e "keycode 66 = Escape Caps_Lock NoSymbol NoSymbol"
+
+# SETTING UP RIGHT ALT TO SEND SIGNAL AS LEFT ALT AS FIREFOX HAS THIS BUG I.E., RIGHT ALT DOES NOT WORK(WHILE BROWSING FACK/FORTH IN HISTORY).
+xmodmap -e "clear mod5"
+xmodmap -e "clear mod1"
+xmodmap -e "keycode 92 = ISO_Level3_Shift"
+xmodmap -e "add mod5 = ISO_Level3_Shift Alt_L"
