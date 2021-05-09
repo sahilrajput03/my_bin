@@ -5,8 +5,16 @@ alias fishbashrc_source='. ~/.config/fish/config.fish'
 alias cdCssDesignTrail='cd /home/array/Documents/github-repos-2021/cssDesignTrail'
 alias snips='cd /home/array/my_bin/snips'
 alias t='clear && npm run test'
+#alias t1='clear && npm run testSingle'
+#^^ Made this as function so, I can pass test message to the command without the quotes ~yikes ~🥝︎
+
+function t1
+    npm run testSingle "$argv"
+end
+
 #alias nt='clear && npm run test'
 alias nr='npm run'
+#^^ The purpose of using nr as alias(and not actual script) is that I get code intellisence with tab completion, yikes🥝︎!
 alias nn='/usr/local/bin/nodemon'
 alias nnq='/usr/local/bin/nodemon -q'
 alias lsa__='ls -a -I . -I .. --color'
