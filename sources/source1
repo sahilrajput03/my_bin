@@ -8,6 +8,7 @@ alias t='clear && npm run test'
 #alias t1='clear && npm run testSingle'
 #^^ Made this as function so, I can pass test message to the command without the quotes ~yikes ~🥝︎
 
+#src: https://fishshell.com/docs/current/tutorial.html#functions
 function t1
     npm run testSingle "$argv"
 end
