@@ -98,7 +98,8 @@ bindsym $mod+d [class="^Emoji Picker"] scratchpad show
 ## sudo apt-get install i3lock
 ## src: https://faq.i3wm.org/question/239/how-do-i-suspendlockscreen-and-logout.1.html
 ## @github: https://github.com/i3/i3lock
-bindsym $mod+Escape exec i3lock -i ~/my_bin/files/wallpapers/geometric-scaled-lockscreen.png
+#Using -t option to make the lockscreen wallpapaer get shown on multiple desktops when you have additional desktops connected🥎︎.
+bindsym $mod+Escape exec i3lock -t -i ~/my_bin/files/wallpapers/geometric-scaled-lockscreen.png
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness

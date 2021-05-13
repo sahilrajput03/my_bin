@@ -1,3 +1,4 @@
 #!/bin/bash
 set -x
 cp ~/.vimrc ~/my_bin/files/.vimrc
+cp -r ~/.vim ~/my_bin/files/

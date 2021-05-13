@@ -1,4 +1,5 @@
 #!/bin/bash
 set -x
 cp ~/.config/i3/config ~/my_bin/files/config-file-i3/
-cp /etc/i3status.conf ~/my_bin/files/config-file-i3/
+cp ~/.i3status.conf ~/my_bin/files/config-file-i3/
+#OLD#cp /etc/i3status.conf ~/my_bin/files/config-file-i3/

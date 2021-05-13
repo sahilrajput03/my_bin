@@ -17,7 +17,11 @@ end
 alias nr='npm run'
 #^^ The purpose of using nr as alias(and not actual script) is that I get code intellisence with tab completion, yikes🥝︎!
 alias nn='/usr/local/bin/nodemon'
+###nodemon hep:: -q, --quiet .............. minimise nodemon messages to start/stop only
 alias nnq='/usr/local/bin/nodemon -q'
+alias nnqc='/usr/local/bin/nodemon --config ~/my_bin/files/nodemon.json -q'
+#
+#
 alias lsa__='ls -a -I . -I .. --color'
 alias virt-manager='sudo virt-manager'
 alias lsryikes='live-server --ignore=/home/array/Documents/github-repos-2021/cssDesignTrail/course-conquering-responsive-layouts/challenge09'

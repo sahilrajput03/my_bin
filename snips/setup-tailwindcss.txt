@@ -1,0 +1,9 @@
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npx tailwindcss init -p #Create a `tailwind.config.css` file.
+
+#Src: https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
+# 1. Delete files 'globals.css' and the remove the corresponding import of it in '_app.js file' as to prevent mixing of Next.js css configurations with tailwindcss css.
+# 2. Add import to '_app.js' file: import 'tailwindcss/tailwind.css'
+# 3. Specify `mode: 'jit'` in 'tailwind.config.css' file, for efficient tailwindcss.
+
+#💝︎TIP: USE CTRL+K TO SEARCH THROUGHT THE DOCUMENTATION AT HTTPS://TAILWINDCSS.COM

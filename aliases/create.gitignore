@@ -1,4 +1,0 @@
-#!/bin/bash
-touch .gitignore
-echo "**/node_modules" >> .gitignore
-echo "**/.next" >> .gitignore

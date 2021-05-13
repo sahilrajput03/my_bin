@@ -18,4 +18,14 @@ a, b, i, button, code, img, input, label, span, strong, textarea {
 	/* 🤸︎ By default a tags are `inline`, making it inline-block allows a tags to have margin-top and margin-bottom. */
 }
 
+button:focus {
+  outline: none;
+  /* ^^ To disable outline when the button is in focus(i.e., after you click the button for once)*/
+}
+
+.target {
+  user-select: none;
+  /* To disable text selection. */
+}
+
 /* ************************************* */

@@ -1,3 +1,47 @@
+## Installed php
+
+FYI: The purpose of chainging the default directory to server is that we get to do everything as sudo to anything in the /var/www/html directory and thats a little absurd.
+
+FYI: You can restart apache service with ``restartApache2Service`` 🍋︎ my_bin binary, yikes!
+
+FYI: Php doesn't work when you server files via live-server( or serve binary too) like servers ~tested by sahil.
+
+FYI: See this if you want watching: https://sergeyzhuk.me/2019/10/18/php-watcher/
+
+FYI: Default location to server apache files from: ``/var/www/html``
+
+FYI: Change the path of default serving directory by apache2 by editing below config file:
+``sudo vi /etc/apache2/sites-available/000-default.conf``
+Also do the same in => sudo vi /etc/apache2/apache2.conf
+src: https://stackoverflow.com/a/23175981/10012446
+
+I guess you just need to have ``apache2`` installed on your linux to be able to run php files on your server.
+
+Hello world example: 
+
+Place your desired php program file @ below location:
+
+``/var/www/html/myfile.php``
+
+with contents as 
+
+```
+<?php
+echo "<h1>Hello World 123</h1>";
+echo "Hello World 123";
+?>
+```
+and now browser ```http://localhost/myfile.php``` in browser, yike!!
+
+```bash
+sudo apt-get install php libapache2-mod-php
+php -v #verify php was installed.
+sudo systemctl restart apache2 #Restart the Apache service to apply the changes:
+```
+
+src: https://phoenixnap.com/kb/install-php-7-on-ubuntu
+But imo this is cool too: https://youtu.be/TKLPDbSqOPY
+
 ## Get title name and class name of a window ?
 
 execute command ``xprop`` in your terminal and click any window to get all its details.

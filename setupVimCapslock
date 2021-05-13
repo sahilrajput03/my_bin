@@ -16,6 +16,9 @@ xmodmap -e "keycode 66 = Escape Caps_Lock NoSymbol NoSymbol"
 
 # SETTING UP RIGHT ALT TO SEND SIGNAL AS LEFT ALT AS FIREFOX HAS THIS BUG I.E., RIGHT ALT DOES NOT WORK(WHILE BROWSING FACK/FORTH IN HISTORY).
 xmodmap -e "clear mod5"
-xmodmap -e "clear mod1"
-xmodmap -e "keycode 92 = ISO_Level3_Shift"
-xmodmap -e "add mod5 = ISO_Level3_Shift Alt_L"
+#xmodmap -e "clear mod1"
+#xmodmap -e "keycode 92 = ISO_Level3_Shift"
+#xmodmap -e "add mod5 = ISO_Level3_Shift Alt_L"
+# Wow, below fix now makes my firefox binding as well as vscode bindings work like 💓︎.
+#xmodmap -e "add mod5 = Alt_L"
+# ^^ this idk why stopped working in vscode, :( ::Do try it later it might work supert as it worked once.
