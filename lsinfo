@@ -1,0 +1,15 @@
+#!/bin/bash
+#set -x
+echo "
+ALIAS  :: COMMAND  :: DESCRIPTION
+l      :: ls       :: shows file/folders without hidden files.
+lt     :: ls -t    :: shows file/folders without hidden files with items sorted by last modified date wise.
+la     :: ls -a    :: shows files/folders with hidden files.
+lat    :: ls -at   :: shows files/folders with hidden files with items sorted by last modified date wise.
+       ::          ::
+                      🏇︎Note that -h flag means the sizes would print in human readable format, i.e., 1024 would be shown as 1kb.
+ll     :: ls -lh   :: shows file/folders in list format without hidden files.
+llt    :: ls -lth  :: shows file/folders in list format without hidden files with items sorted by last modified date wise.
+lla    :: ls -lah  :: shows files/folders in list format with hidden files.
+llat   :: ls -lath :: shows files/folders in list format sorted last modified date wise alongs with hidden files.
+"
