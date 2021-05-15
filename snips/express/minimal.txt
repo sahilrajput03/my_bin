@@ -24,6 +24,22 @@ app.get("/c", (req, res) => {
   return res.send(req.query);
 });
 
+app.get('/d', (req, res) => {
+	// 🔽︎ send status 200 by default.
+	return res.end()
+})
+
+app.get('/e', (req, res) => {
+	// 🔽︎ send status 200 by default.
+	return res.end('You can pass some text data.')
+})
+
+app.get('/f', (req, res) => {
+	// 🔽︎ send custom status code and can also send objects as well but you need to serialize object first.
+	return res.status(207).end(JSON.stringify({cars: 21}))
+})
+
+
 app.listen(PORT, function () {
   console.log("express running on", PORT, "...");
 });

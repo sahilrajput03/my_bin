@@ -1,5 +1,5 @@
 #!/usr/bin/fish
-ls -a -I . -I .. --color
+ls -a -I . -I .. --color | lolcat
 #ls $@ -a --color -I . -I ..
 # https://unix.stackexchange.com/a/147243
 #

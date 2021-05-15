@@ -2,5 +2,5 @@
 #ls -alt -I . -I .. --color
 #^^ Here , -I means to ignore a specific entry.
 
-ls -lath --color $*
+ls -lath --color $* | lolcat
 #ls $*

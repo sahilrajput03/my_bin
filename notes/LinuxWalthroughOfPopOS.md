@@ -1,3 +1,9 @@
+## Installed lolcat that I can use any output to be rainbow coloured:
+
+for e.g., ```ls -al | lolcat```
+for e.g., ```cat anyFile | lolcat```
+
+
 ## Installed php
 
 FYI: The purpose of chainging the default directory to server is that we get to do everything as sudo to anything in the /var/www/html directory and thats a little absurd.

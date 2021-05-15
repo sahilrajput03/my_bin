@@ -1,5 +1,5 @@
 #!/usr/bin/fish
-ls -at --color
+ls -at --color | lolcat
 
 #ls -a -I . -I .. --color
 #ls $@ -a --color -I . -I ..
