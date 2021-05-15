@@ -1,5 +1,7 @@
 ## Installed lolcat that I can use any output to be rainbow coloured:
 
+src: https://github.com/busyloop/lolcat
+
 for e.g., ```ls -al | lolcat```
 for e.g., ```cat anyFile | lolcat```
 
