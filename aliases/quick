@@ -3,18 +3,40 @@
 // * quick post 'https://nifty-darwin-aec8ea.netlify.app/api/hello' '{os: "pop os", email: "sahilrajput03@gmail.com"}'
 // #!/usr/local/bin/node
 // src: https://stackoverflow.com/a/20643568
-const dirty = require('dirty-json')
+const {parse: betterParse} = require('dirty-json')
 let log = console.log
 
 const exec = require('child_process').exec
 let args = process.argv.slice(2)
+const dataFromCli = args[2]
 
-const dataToSend = args[2]
-let json = dataToSend ? JSON.stringify(dirty.parse(dataToSend)) : '{}'
-// log(json);// Valid json now! Yikes!
+// 🧪︎🧪︎🧪︎🧪︎🧪︎🧪︎🧪︎🧪︎ testing below...
+try {
+  let dataFromCliParsed1 = JSON.parse(JSON.stringify(dataFromCli))
+  log('🔥︎', dataFromCliParsed1)
+  log('💩︎', dataFromCliParsed1.a)
+
+  // BELOW LINE 🛑︎ THROWS ERROR ON PARSING STRING AS OBJECTS...
+  let dataFromCliParsed2 = JSON.parse(dataFromCli) // 🛑︎🛑︎🛑︎ throws error.
+  log('🔥︎🤐︎', dataFromCliParsed2)
+  log('💩︎🤐︎', dataFromCliParsed2.a)
+} catch (error) {
+  log('SHITTY NODE BEHAVIOUR', error.name, '😬︎😬︎😬︎😬︎😬︎')
+}
+
+// BELOW CODE WORKS GOOD ON PARSING STRING AS OBJECTS...
+let dataFromCliParsed3 = betterParse(dataFromCli)
+log('🔥︎🔥︎1', dataFromCliParsed3)
+log('🔥︎🔥︎2', dataFromCliParsed3.a)
+
+// 🧪︎🧪︎🧪︎🧪︎🧪︎🧪︎🧪︎ testing above...
+
+let dataFromCliString = dataFromCli ? JSON.stringify(betterParse(dataFromCli)) : '{}'
+// let dataFromCliString = dataFromCli ? JSON.stringify(dataFromCli) : '{}'
+// log(dataFromCliParsed) // Valid json now! Yikes!
 
 // var argsForCurl = ` -X POST -d '${json}' -H 'Content-Type: application/json' ${args[0]}`;
-var argsForCurl = ` -X ${args[0].toUpperCase()} -d '${json}' -H 'Content-Type: application/json' ${args[1]}`
+var argsForCurl = ` -X ${args[0].toUpperCase()} -d '${dataFromCliString}' -H 'Content-Type: application/json' ${args[1]}`
 // toUpperCase ensures that when user use words such as Post or post inspite of POST, the program would still work!
 exec('curl' + argsForCurl, (err, stdout, stderr) => {
   if (err) {
