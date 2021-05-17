@@ -1,0 +1,40 @@
+## Let’s look at how this works mathematically.
+
+A is 65 i.e.,
+64 32 16 8 4 2 0 (7 binary digits) 
+1  0  0  0 0 0 1
+
+
+a is 97 i.e.,
+64 32 16 8 4 2 0 (7 binary digits)
+1  1  0  0 0 0 1
+
+FYI: Mojibake is the garbled text that is the result of text being decoded using an unintended character encoding.
+
+Unicode Consortium: They made a standard(coz with WWW now documents needed to send across the world and there has to be standard that is good with everyone's language's character)
+Unicode now have a list of more than a hundred thousand character that covers everything you could possibly want to write in any language i.e., English alphabet, Cyrillic alphabet, Arabic alphabet, Japanese alphabet, Japanese, Chinese, and Korean characterss.
+
+What you have at the end is the Unicode Consortium assigning 100,000+ characters to 100,000 numbers. They have not chosen binary digits. They have not chosen what they should be represented as. All they have said is that THAT Arabic character there, that is number 5,700-something, this linguistic symbol here is 10,000-something. I have to simplify massively here because there are about of course, five or six incompatible ways to do this. But the web has more or less settled on its something called "UTR-8". There are a couple of problems with doing the obvious thing, which is saying, okay, we're going to 100,000. Thats gonna need, what... to be safe, that's gonna need 32 binary digits to encode it. They envoded the english alphabet in exactly the same way as ASCII did. 'A' is still 65. So if you have just a string of English text, and you are encoding it at 32 bits per character and you gonna have about 26-27 zeroes and then a few ones for every single character. That is incredibly wasteful. Suddenly every English language text file takes four times the space on disk. So, 
+
+Problem 1: you have to get rid of all the zeroes in the English text. 
+
+Problem 2: there are lots of old computer systems that interpret 8 zeroes in a row, a NULL, as "this is the end of the string of characters". So, if you ever send 8 zeroes in a row, they just stop listening. They assuse that string has ended there, and it gets cut off, so you can't have 8 zeores in a row anywhere.
+
+Problem 3: It has to be backwards compatible. You have to able to tkae this Unicode text and chuck it into something that only understands basic ASCII, and have it more or less work for English text.
+
+UTF-8 solves all the above problems and its just a wonderful hack. It starts by just taking ASCII. If you have something under 128, that can be expressed as 7 digits, you put a zero, and then you put the same numbers that you would otherwise, so lets have that 'A' again - there we go!
+
+A is 65 in ASCII and to write A in UTF-8 its same but the preceeding 0, i.e.,
+128 64 32 16 8 4 2 0 (8 binary digits)
+ 0  1  0  0  0 0 0 1
+
+So thats still a valid UTF-8 valid, and that's still ASCII valid. Brilliant!.
+
+Now, you need something that's gonna work more or less for ASCII, or at least not break things but still be understood. So what you do is you start by writing down "110". This means this is the start of a new character, and this character is going to be 2 bytes long. Two ones, two bytes, a byte being 8 characters. And you say on this one, we're gonna start it with "10", which means this is a continuation, and at all these blank spaces you have 5 here and 6 here, you fill in the other numbers, and then when you calculate it, you just take off those headers, and it understands just as being whatever number that turns out to be.
+
+110xXxXx 10xXxXxX
+   ^^^^5   ^^^^^6 
+
+.... see the video though: https://www.youtube.com/watch?v=MijmeoH9LT4
+
+Its  backward compatible. It avoids waste. At no point will it ever, ever send 8 zeroes in a row, and really really crucially, the one that made it win over every other system is that you can move backward and forward really easily. You do not have to have an index where the character starts. If you are halfway through a string and you wanna go back one character, you just look for the previous header. And that's it that works, and, as of a few years ago, UTF-8 beat out ASCII and everything else as, for the first time, The dominant character encoding on the web. We don't have that mojibake that Japanese has. We have something that nearly works, and that is why it's the most beautiful hack that I can think of that is used around the world every second of every second of every day. src: https://youtu.be/MijmeoH9LT4

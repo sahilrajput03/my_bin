@@ -22,6 +22,8 @@ exec_always --no-startup-id feh --bg-fill  ~/my_bin/files/wallpapers/unleash-pot
 # i3 way of setting the wallpaper is the best bay IMO,
 # yikes, as I don't like to clutter my .profile file.
 exec_always --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
+# ^^🥏︎🥏︎ This is the code which works good 🥇︎ with setting my secondary display.
+# Prefer setting up secondary display using 🤺︎ setupSecondDisplay 🤺︎ cli tool
 ##
 # Trying new keybindings: like moving workspace from one montior
 # to the other:

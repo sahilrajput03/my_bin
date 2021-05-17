@@ -1,0 +1,55 @@
+Public Key Cryptography Simply Explained
+November 19, 2019 · 20 min · Bee
+
+src: https://skerritt.blog/how-does-public-key-cryptography-work/
+
+# Wow!
+
+- Caeasr's way of encrypting text is that you shift each letter in the plaintext by a shift of 3. So its like, message `abc` would change to ciphertext as `def`. 
+- Julius know the hash function i.e., 3 is the shift required to turn ciphertext to plaintext. This is a symmetric cryptography.
+- Caesar's Cipher = Caesar's way of converting plaintext to ciphertext.
+- ciphertext is the encrypted text.
+- mod is the modulus operator. It’s the remainder of dividing. We do modulus because there isn’t a 27th letter in the alphabet, you just wrap around from “z” back to “a”.
+- Hacking caesar's hash function: As you can tell, it’s not very secure. With 25 total shifts you just have to shift the text 25 times until you find the decrypted code, this is called a BRUTE FORCE ATTACK.
+
+## What is assymetric concept ?
+
+Now, imagine you brought your lunch to work in a special lunchbox — the same you’ve had since nursery school. Someone steals your food and your lunchbox. You don’t mind losing the food, but you do want the lunchbox back. You want a way for them to securely return your lunchbox without you knowing who took it — because that takes the pressure off of them.
+
+You place a box in the staff room with a lock & key. You give copies of keys to everyone in the office and hope for the best — that someone will return the lunchbox by placing it in the box.
+
+Unfortunately, the keys everyone has also unlocks the box as well as locks it. This means that someone could unlock the box and re-steal your lunchbox.
+
+We need to find a way to get rid of this idea of sharing keys, get rid of the idea of ‘any key can lock and unlock’, and this is where asymmetric cryptography comes in.
+
+## Asymmetric cryptography:
+
+You install an extraordinary lock on this box, one that has two separate keys. The first key 🔑 can only turn clockwise, from A (locked) to B (unlocked) to C (locked).
+
+The second key 🗝️ can only turn anti-clockwise, from C to B to A. You pick the first key and keep it to yourself. This is called a private key. The second key is called the public key. This key is given out to everyone in the office. You want everyone to have this key.
+
+When someone returns your prized lunchbox, they can leave it in this box. All the public keys can do is lock the box. Your private key is the only one that can open it.
+
+This is public key cryptography. Everyone knows that if they put something in the box and lock it, only you can open it with your private key.
+
+With symmetric cryptography, everyone could open your box if they had the key. Now, no one apart from you can open the box.
+
+## Some people: 
+Public key cryptography was first formulated by Whitfield-Diffie or James Ellis (Ellis discovered first, but he didn’t publish it. Whitfield-Diffie published first). Both Ellis and Whitfield-Diffie enjoyed that public key cryptography could work in theory, but never managed to figure out how it would work in practice.
+
+The production of a working Public Key Encryption system is attributed to Rivest–Shamir–Adleman (RSA) or Clifford Cocks. Like above, Cocks discovered first, but he didn’t publish it. Rivest–Shamir–Adleman published first.A
+
+Public key (K+)
+Private key (K-)
+
+Let’s encrypt the word “cats”. In binary, according to Ascii, this is:
+
+****
+
+## Hashing function
+A hashing function allow us to take any value as input and produce a fixed value with fixed length (say a hexadecimal string). The value returned from the hash function is known as hash or hash digest. A hash or hash digest cannot be reversed to create the content value for which it was created. But what we can do is that we can validate that two values are identical by comparing their hashes.
+
+## SHA256 Agorithm - Secure Hash Algorithm with a length of 256 bits
+
+It was developed by NSA(National Secutiry Agency, USA) back in 2001.
+Its a one way cryptographic function that means it can encrypt data, but cannot decrypt data back to ts original form.
