@@ -1,3 +1,8 @@
+## Not getting your binary from `~/my_bin` in i3wm when you search via $mod+/ in launcher ?
+
+I got below solution from source: https://unix.stackexchange.com/a/335552, but the answer recommends to delete file regenrate the binaries/scripts again using automate process, but in my opinion just adding the script names to the array in the file is SIMPLY GOOD, and it doesn't require you to restart any service, yikes!!🎁︎
+The solution is very simple, i.e., add the name of script to `~/.cache/dmenu_run` file. Say, I just added `youtube-tv` and `skype` to the list of array, and now it works super awesome.!!💝︎💝︎
+
 ## Installed lolcat that I can use any output to be rainbow coloured:
 
 src: https://github.com/busyloop/lolcat
