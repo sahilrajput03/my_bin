@@ -14,6 +14,7 @@ if has("syntax")
 endif
 "colorscheme elflord
 colorscheme codedark
+" Note I have installed https://vimcolors.com/628/codedark/dark theme, just by copying the file codedark.vim file from the repo to the taget location(and have installed no plugin at all).
 " You can find themes from https://vimcolors.com/ and put them in ~/.vim/colors/ directory, yikes. src of all this knowledge: https://phoenixnap.com/kb/vim-color-schemes
 
 "Tip: to disable cursor blinking just, just disable your terminal cursor blinking to disable(simple to do in gnome-terminal though).

@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+cp -r ~/.config/fish ~/my_bin/files/fishConfigFolderBackup/

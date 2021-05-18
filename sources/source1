@@ -4,13 +4,64 @@ alias fishbashrc_cd='cd ~/.config/fish/'
 alias fishbashrc_source='. ~/.config/fish/config.fish'
 alias cdCssDesignTrail='cd /home/array/Documents/github-repos-2021/cssDesignTrail'
 alias snips='cd /home/array/my_bin/snips'
-alias t='clear && npm run test'
-#alias t1='clear && npm run testSingle'
+#alias t='clear && npm run test'
+## Below are some todo 🤑︎🤑︎ functions!!
+#alias todo='todo.sh'
+#alias td='todo.sh'
+function tdd
+# ``todo.sh do 4`` #This_command_will_mark_task4_as_done.
+    todo.sh do $argv | lolcat
+end
+
+function tdp
+# ``todo.sh pri`` or ``todo.sh p`` 
+# e.g., tdp 4 N #This_command_will_add_N_priority_to_task_4.
+# A priority can be from A to Z. src: https://github.com/todotxt/todo.txt-cli/blob/master/USAGE.md
+    todo.sh p $argv | lolcat
+end
+
+function tda
+    todo.sh add "$argv" | lolcat
+end
+
+function tdl
+		 todo.sh ls | lolcat 
+end
+
+function tdla
+#This command show all incompleted as well as completed tasks.
+		 todo.sh listall | lolcat 
+end
+
+
+#function td
+# Not using this function in favor of below ``td`` dynamic fn.
+#    todo.sh ls | lolcat
+#end
+
+#🔽︎This is fun...
+function td
+#What i want is if no arguments passed then it should act as todo.sh ls, but when arguments passed arguments should be passed to todo.sh like todo.sh $argv.
+		if test "$argv" = ""
+		 todo.sh ls | lolcat 
+			#echo "You didn't pass arguments ~ Sahil"
+		else
+#Note: You can use ``td -h`` to execute ``todo.sh -h`` as well.
+    	todo.sh $argv | lolcat
+			#echo "You passed arguments ~ Sahil"
+		end
+end
+########
+alias t1='clear && npm run testSingle'
 #^^ Made this as function so, I can pass test message to the command without the quotes ~yikes ~🥝︎
 
 #src: https://fishshell.com/docs/current/tutorial.html#functions
 function t1
     npm run testSingle "$argv"
+end
+
+function t
+    npm run test
 end
 
 #alias nt='clear && npm run test'

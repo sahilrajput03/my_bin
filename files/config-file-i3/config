@@ -1,4 +1,15 @@
 ############ ~sahil ##############
+# src: https://i3wm.org/docs/userguide.html#_default_border_style_for_new_windows
+# Managing the color of focussed window in i3.
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #ff0066 #ffffff #2e9ef4   #ff0066
+# default_border normal 6
+# normal means show title bar,  followed by size of border width.
+default_border pixel 6
+# pixel means hide title bars followed by the size of border width.
+##
+##
+##
 exec_always --no-startup-id feh --bg-fill  ~/my_bin/files/wallpapers/unleash-potential.webp || echo "Failing is ok though."
 # Putting the command "feh ...blah ..blah" doesn't work very well 
 # with .profile file(as in my my_bin/sources/profile-source file), 

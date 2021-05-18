@@ -1,3 +1,23 @@
+## Fixing vlc mkv files playing..
+
+First of all you must get to know that fixing this isn't a a very good experience. So first of all do this:
+
+#Note if you don't enable restricted extras, you won't be able to install from the ppa ``strukturag/libde265`` as it would throw error when you try to do ``sudo apt-get update`` i.e., the target PPA doesn't has a release file and installing from such ppa's are disbaled by default. Yikes!! Finally I fixed that shit....!!
+sudo apt install ubuntu-restricted-extras
+#src: https://askubuntu.com/a/1324776/702911
+
+sudo add-apt-repository ppa:strukturag/libde265
+sudo apt-get update
+sudo apt-get install vlc-plugin-libde265
+#src: https://askubuntu.com/a/787584/702911
+
+Also, you might need to choose the different vlc player for the default opening application for mkv files by simply right clicking any .mkv file and choose "Properties" > "Open With"(tab) > and try changing the other "Vlc media player" from the list(as in my current case one Vlc player there is faulty and the other one works good!!). Yo, the main problem with setting my vlc player this time that I couldn't solve the issue that "installing from such ppa which doesn't have a release file are not allowed in ubuntu by default, so get to enable it via installing 'ubuntu-restricted-extras' package first. I hope this was the real process, but for now its fixed at least. Yikes!!
+
+## Using todo.sh, I aliased it to `todo` though
+
+Read about all the possible cli options @ https://github.com/todotxt/todo.txt-cli/blob/master/USAGE.md
+src: https://github.com/todotxt/todo.txt-cli
+
 ## Not getting your binary from `~/my_bin` in i3wm when you search via $mod+/ in launcher ?
 
 I got below solution from source: https://unix.stackexchange.com/a/335552, but the answer recommends to delete file regenrate the binaries/scripts again using automate process, but in my opinion just adding the script names to the array in the file is SIMPLY GOOD, and it doesn't require you to restart any service, yikes!!🎁︎
