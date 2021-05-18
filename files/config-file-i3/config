@@ -1,3 +1,7 @@
+# Wow below command just sets the 🤺︎🤺︎🤺︎ workspace on second monitor as 10th workspace, yo!!
+# src for my answer: https://www.reddit.com/r/i3wm/comments/d4htyl/how_to_change_initial_workspace_name/f0dez02?utm_source=share&utm_medium=web2x&context=3
+# src in docs: https://i3wm.org/docs/userguide.html#workspace_screen
+workspace $ws10 output HDMI1
 ############ ~sahil ##############
 # src: https://i3wm.org/docs/userguide.html#_default_border_style_for_new_windows
 # Managing the color of focussed window in i3.

@@ -86,8 +86,9 @@ alias cdflatpack='cd ~/.local/share/flatpak/exports/share/applications'
 alias gch='git checkout' #This is good for autocompletion in fish!
 alias c='clear'
 
-# :: Path:
-export PATH="/home/$USER/my_bin:/home/$USER/my_bin/aliases:/home/$USER/my_bin/parcel-dev:$PATH"
+# :: Path: 🏅︎🏅︎🏅︎
+# 🥊︎, I am not using below path logic to add to path variable coz I entered desired below paths direclty to the PATH variable in the file '/etc/environment' file. And the reason for doing that is because by dmenu laucher for launching files doesn't work when I change my path in the ".config/fish/fish.config" file, 🥇︎yo!!
+#export PATH="/home/$USER/my_bin:/home/$USER/my_bin/aliases:/home/$USER/my_bin/parcel-dev:$PATH"
 
 # :: Environement Variables Below:
 #export NODE_PATH=/usr/lib/node_modules #This is good if you aren't using n version manager.
