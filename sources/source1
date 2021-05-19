@@ -1,4 +1,6 @@
 # :: Some Aliases:
+alias mb='cd ~/my_bin'
+alias so='sizeof'
 alias fishfunctions='cd /usr/share/fish/functions/'
 alias fishbashrc_cd='cd ~/.config/fish/'
 alias fishbashrc_source='. ~/.config/fish/config.fish'
