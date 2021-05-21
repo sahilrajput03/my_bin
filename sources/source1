@@ -6,6 +6,7 @@ alias fishbashrc_cd='cd ~/.config/fish/'
 alias fishbashrc_source='. ~/.config/fish/config.fish'
 alias cdCssDesignTrail='cd /home/array/Documents/github-repos-2021/cssDesignTrail'
 alias snips='cd /home/array/my_bin/snips'
+alias sn='cd /home/array/my_bin/snips'
 #alias t='clear && npm run test'
 ## Below are some todo 🤑︎🤑︎ functions!!
 #alias todo='todo.sh'
@@ -87,6 +88,7 @@ alias cdflatpack='cd ~/.local/share/flatpak/exports/share/applications'
 ##For other stuff
 alias gch='git checkout' #This is good for autocompletion in fish!
 alias c='clear'
+#alias c='clear && echo Use ctrl+l next time🦁︎.'
 
 # :: Path: 🏅︎🏅︎🏅︎
 # 🥊︎, I am not using below path logic to add to path variable coz I entered desired below paths direclty to the PATH variable in the file '/etc/environment' file. And the reason for doing that is because by dmenu laucher for launching files doesn't work when I change my path in the ".config/fish/fish.config" file, 🥇︎yo!!

@@ -1,4 +1,11 @@
-## little raw notes, but they are helpful though.!!
+## I disabled the menubar in ``gnome-terminal`
+
+You can get this setting in 'Preferences' > 'Enable the menu accelerator key(F10 by default)'.
+
+And now when I open new terminals, they look so elegant in design🤺︎🤺︎!! Anytime you want the menu bar, just right click in terminal and its there!! 
+
+
+## Little raw notes, but they are helpful though.!!
 I have enabled devilspie2 on startup using above screenshot.
 I added below line to ~/.profile file so that copyq is opened on user login.
 flatpak run com.github.hluk.copyq &

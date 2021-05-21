@@ -1,6 +1,6 @@
 #!/bin/bash
 #set -x
-cp ~/my_bin/files/.prettierrc.yaml .
+cp ~/my_bin/files/.prettierrc.js .
 cp ~/my_bin/files/.prettierignore .
 
 # To use iif when using option `semi: false`, use below way to make 

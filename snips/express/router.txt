@@ -1,20 +1,26 @@
-// PRO TIP:: Don't forget to call next() if you have multiple requests of same type (get/post/etc) for same path (say "/trades").
-// PRO TIP:: Always use `return` with while send/end`ing a request, ``return res.send('my text...')`` or ``return res.status(505).end()``
-//##file: ``birds.js``
-var express = require('express')
-var router = express.Router()
+//📁︎ server.js
+const egRouter = require('./routers/eg')
+// ...
+app.use('/eg', egRouter)
 
-//middleware that is specific to this router
-router.use(...)
+// 📁︎ routers/eg.js
+const express = require('express')
+const router = express.Router()
+const {log} = console
 
-router.get('/', ...)
+router.use((req, res, next) => {
+	// log(`${req.method} @ ${req.path}`)
+	log('request at `eg` router...')
+	next()
+})
+
+router.get('/', (req, res, next) => {
+	res.send('You 🏇︎')
+})
+
+router.get('/me', (req, res) => {
+	res.send('Me 🤺︎')
+})
 
 module.exports = router
 
-
-//##file ``server.js``
-var birds = require('./birds')
-
-// ...
-
-app.use('/birds', birds)
