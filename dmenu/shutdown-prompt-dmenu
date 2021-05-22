@@ -1,0 +1,7 @@
+#!/bin/bash
+[ $(echo -e "No\nYes" | dmenu -i -p "You are trying to shutdow. Are you sure?") ==  "Yes" ] && "poweroff"
+#            																																										^^ this will execute when == "Yes" evaluates true. Yo!!
+# Note -e in echo means "Enable interpretation of backslash escapes (read from ``man echo``).
+
+# Note -i in dmenu is for -p is for prompt message!!
+# Note -i in dmenu is for case insensitive search.

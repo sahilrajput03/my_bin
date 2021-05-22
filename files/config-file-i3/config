@@ -1,3 +1,15 @@
+#Below command transfers firefox applicationto workspace 3 automatically, to test it you might need to use mod+r to get affect.
+#for_window [class="Firefox"] move container to workspace 3
+#src: https://unix.stackexchange.com/questions/96798/i3wm-start-applications-on-specific-workspaces-when-i3-starts
+# 
+#
+#
+# Using my ``dmenu_shutdown_prompt`` to bind with mod+shift+x, yo!!
+#FYI:: i3-msg 'workspace 2; exec nautilus'
+#      ^^^🤑︎🤑︎ That command opens workspace2 and then opens nautilus.
+bindsym $mod+shift+x exec ~/my_bin/dmenu/shutdown-prompt-dmenu
+#Use mod+shift+e to get logout prompt, yikes!!(its defined by default in the lower section of this file).
+
 # Wow below command just sets the 🤺︎🤺︎🤺︎ workspace on second monitor as 10th workspace, yo!!
 # src for my answer: https://www.reddit.com/r/i3wm/comments/d4htyl/how_to_change_initial_workspace_name/f0dez02?utm_source=share&utm_medium=web2x&context=3
 # src in docs: https://i3wm.org/docs/userguide.html#workspace_screen
@@ -100,7 +112,7 @@ bindsym $mod+comma exec ~/my_bin/copyq -e "toggle()"
 #working example~sahil#bindsym $mod+shift+slash --release exec gedit 
 
 ###### making use of scratchpad, src: https://i3wm.org/docs/userguide.html#_scratchpad
-# Make the currently focused window a scratchpad
+# 🔽︎ Make the currently focused window a scratchpad
 bindsym $mod+x move scratchpad
 
 # Show the first scratchpad window
@@ -320,7 +332,8 @@ bindsym $mod+Shift+0 move container to workspace number $ws10; workspace 10
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+#bindsym $mod+Shift+r restart
+bindsym $mod+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
@@ -343,10 +356,11 @@ mode "resize" {
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
+        # back to normal: Enter or Escape or $kod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+				# I disable below binding coz I simply prefer to use "Return" or "Escape" key to return back to normal mode from the resize mode. Yikes!! (*Also, now i am using mod+r to reload i3wm though 🤺︎🤺︎🤺︎!!
+        #bindsym $mod+r mode "default"
 }
 
 #bindsym $mod+r mode "resize"

@@ -1,3 +1,15 @@
+## Just read about the -c option in ``sh``, e.g., ``sh -c``
+
+Searchig in ``man sh`` just helps me out ,yo!!
+-c               Read commands from the command_string operand instead of from the standard input.  Special parameter 0 will be set from the command_name operand and the po‐
+                            sitional parameters ($1, $2, etc.)  set from the remaining argument operands.
+
+Example: sh -c 'sleep 3 && echo I was sleeping for 3 seconds'
+
+## If you interested in a minial file manager based on terminal..
+
+Refer this video, it seems amazing: https://youtu.be/L6Vu7WPkoJo
+
 ## I disabled the menubar in ``gnome-terminal`
 
 You can get this setting in 'Preferences' > 'Enable the menu accelerator key(F10 by default)'.
