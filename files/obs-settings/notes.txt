@@ -1,0 +1,17 @@
+- For learning transitions: Just watch this amazing guy doing in *1 and also he has amazing amzing playlist for learning everything about obs, yikes!!!
+*1: https://youtu.be/QsUqQNhMyGs
+
+- Using alsa mixer user w and e to change the left/right speaker output, yo!!🔥︎🔥︎
+
+- Using alsamixer command just works for me the way I have setup in the screenshot in this same folder!! And its amazing!!🏇︎ But in case you don't get to disable the internal mic i.e., in the display of the laptop, then must check this amazing post here: https://www.maketecheasier.com/disable-microphone-webcam-ubuntu/
+
+Use buil-in video viewer to see these mkv videos as you need some tweaking to make vlc actually work with .mkv files, as right now vlc just show only black screen only.
+
+- Want to test if your voice quality and the noise supression is all good or not..?
+Just click the gear icon on the mic, and select "Advance Audio Properties" and see where is your desired mic and select the "Audio Monitoring" value of that mic to "Monitor Only (mute output)" and then close the dialog box. That it. Source of this: https://youtu.be/puJeOg1jrE0
+
+- Want to reduce noise in your mic input ?
+"Gear icon" for the mic > "Filters". And now add the filters i.e., "Noise Gate" and "Noise Supression" and adjust them to your conveince. Source of this: https://krisp.ai/blog/obs-remove-background-noise
+
+- Want to change the name of recording filename string format ?
+Just go to settings > Advanced > Recording, and change the "Filename Formatting" string there. Yo!!

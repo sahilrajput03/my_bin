@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+air wine '/home/array/.wine/drive_c/Program Files (x86)/Safari/Safari.exe'

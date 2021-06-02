@@ -1,4 +1,5 @@
 # dependencies
+**/.aleph
 **/node_modules
 **/.cache
 **/dist

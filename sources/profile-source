@@ -43,3 +43,5 @@ flameshot &
 #sleep 10 && i3-msg reload &
 # ^^ that didn't work idk why, but below worked well though🤺︎🤺︎.
 
+#Just to access python3 via python cli
+#alias python=python3

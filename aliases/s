@@ -1,3 +1,4 @@
 #!/bin/bash
 set -x
-npm start -s
+BROWSER=none npm start -s
+#^^ Using this to prevent default browser opening with react server.

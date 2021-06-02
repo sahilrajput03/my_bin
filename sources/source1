@@ -1,12 +1,18 @@
 # :: Some Aliases:
+#alias deno='/home/array/.deno/bin/deno'
+# ^^ Not needed as I added deno to PATH variable below in this same file.
+#alias python='python3' # I added this alias to profile-source file.
+alias vilinuxnotes='vi ~/my_bin/notes/linux-notes.txt'
 alias mb='cd ~/my_bin'
 alias so='sizeof'
 alias fishfunctions='cd /usr/share/fish/functions/'
 alias fishbashrc_cd='cd ~/.config/fish/'
 alias fishbashrc_source='. ~/.config/fish/config.fish'
 alias cdCssDesignTrail='cd /home/array/Documents/github-repos-2021/cssDesignTrail'
+alias cdTiq='cd /home/array/Documents/blulabs.in/tiqassist'
 alias snips='cd /home/array/my_bin/snips'
 alias sn='cd /home/array/my_bin/snips'
+alias o='open'
 #alias t='clear && npm run test'
 ## Below are some todo 🤑︎🤑︎ functions!!
 #alias todo='todo.sh'
@@ -87,13 +93,16 @@ alias cdflatpack='cd ~/.local/share/flatpak/exports/share/applications'
 
 ##For other stuff
 alias gch='git checkout' #This is good for autocompletion in fish!
+alias gb='git branch'
+alias gl='git lg'
 alias c='clear'
 #alias c='clear && echo Use ctrl+l next time🦁︎.'
 
 # :: Path: 🏅︎🏅︎🏅︎
 # 🥊︎, I am not using below path logic to add to path variable coz I entered desired below paths direclty to the PATH variable in the file '/etc/environment' file. And the reason for doing that is because by dmenu laucher for launching files doesn't work when I change my path in the ".config/fish/fish.config" file, 🥇︎yo!!
 #export PATH="/home/$USER/my_bin:/home/$USER/my_bin/aliases:/home/$USER/my_bin/parcel-dev:$PATH"
-
+export PATH="/home/array/.deno/bin:$PATH"
+# ^^ to add deno's binaries to PATH variable.
 # :: Environement Variables Below:
 #export NODE_PATH=/usr/lib/node_modules #This is good if you aren't using n version manager.
 export NODE_PATH=/usr/local/lib/node_modules #This is good if you are using n version manager.
