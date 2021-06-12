@@ -1,0 +1,4 @@
+#!/bin/bash
+set -x
+#Installation notes of postman canary: Just downloaded the canary version from official postman website and extracted it to ~ folder, and now I am simply using `postman` as script to run that binary.
+air ~/PostmanCanary/PostmanCanary

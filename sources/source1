@@ -4,6 +4,10 @@
 #alias python='python3' # I added this alias to profile-source file.
 alias vilinuxnotes='vi ~/my_bin/notes/linux-notes.txt'
 alias mb='cd ~/my_bin'
+alias viProfile-source='vi ~/my_bin/sources/profile-source'
+alias viSource1='vi ~/my_bin/sources/source1'
+alias cdTesting_things='cd ~/Documents/testing_things/'
+alias cdauth0='cd /home/array/Documents/testing_things/test-auth0-express'
 alias so='sizeof'
 alias fishfunctions='cd /usr/share/fish/functions/'
 alias fishbashrc_cd='cd ~/.config/fish/'

@@ -1,3 +1,6 @@
+## Installed postman canary simply
+
+Go to postman official site and download the canary version and extract it to ~ folder, use the script to execute the PostmanCanary binary, yo!! Also, read the file `~/my_bin/postman`.
 
 ## Try this from your launcher start epiphany(a webkit powered browser, same as safari):
 

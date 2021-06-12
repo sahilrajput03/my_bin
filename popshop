@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+air io.elementary.appcenter
