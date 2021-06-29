@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+air_silent flatpak run io.typora.Typora

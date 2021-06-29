@@ -1,0 +1,4 @@
+#!/bin/bash
+set -x
+cd /e/githubrepos_desktop_windows
+./deployReverberateml.js

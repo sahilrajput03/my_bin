@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+git clean -f && git reset --hard

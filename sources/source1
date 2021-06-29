@@ -17,6 +17,7 @@ alias cdTiq='cd /home/array/Documents/blulabs.in/tiqassist'
 alias snips='cd /home/array/my_bin/snips'
 alias sn='cd /home/array/my_bin/snips'
 alias o='open'
+#alias deployReverberateml.js='cd /e/githubrepos_desktop_windows && deployReverberateml.js'
 #alias t='clear && npm run test'
 ## Below are some todo 🤑︎🤑︎ functions!!
 #alias todo='todo.sh'
@@ -99,6 +100,7 @@ alias cdflatpack='cd ~/.local/share/flatpak/exports/share/applications'
 alias gch='git checkout' #This is good for autocompletion in fish!
 alias gb='git branch'
 alias gl='git lg'
+alias gpusAll='echo + git push origin --all && git push origin --all'
 alias c='clear'
 #alias c='clear && echo Use ctrl+l next time🦁︎.'
 

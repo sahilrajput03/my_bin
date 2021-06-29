@@ -1,0 +1,3 @@
+#!/bin/bash
+t=${*%??}
+/usr/local/bin/nodemon -q -e c -x "gcc $* -o binary; ./binary"

@@ -21,4 +21,6 @@ module.exports = {
 	braceStyle: '1tbs',
 	//  ^^ this sets the brace style for php formatting like to put on same line.
 	//  Read more about php formatting @ https://github.com/prettier/plugin-php
+	printWidth: 1000,
+	// ^^ Default is 80 characters per line.
 }

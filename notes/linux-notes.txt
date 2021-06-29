@@ -1,3 +1,13 @@
+## Using totme (gnome's free video player in ubuntu and popos)
+
+Use cli tool i.e., `totem` or you can actually use air or air_silent too, i.e., air totem videoFileName.mp4 .
+
+## amazing i3
+
+https://faq.i3wm.org/question/2562/is-there-a-way-to-focus-the-previous-window/index.html
+
+https://github.com/i3/i3/issues/838#issuecomment-338426921
+
 ## Installed postman canary simply
 
 Go to postman official site and download the canary version and extract it to ~ folder, use the script to execute the PostmanCanary binary, yo!! Also, read the file `~/my_bin/postman`.
@@ -1086,3 +1096,17 @@ src: https://help.ubuntu.com/16.04/ubuntu-help/power-hibernate.html
 - Tegegram Desktop from Pop store
 - Vscode from Pop store(using Pop! OS(deb)
 - Download chrome's .deb file using its official site, and installed via `sudo apt install ./google-chrome-stable_current_amd64.deb`, yikes!!
+
+## rename files for extensions in bulk..
+
+https://linuxize.com/post/how-to-rename-files-in-linux/
+
+You can even rename all files with a certain extension to a different extension. For example, to rename all .txt files to .doc file format in the current directory, simply run:
+
+$ mmv \*.txt \#1.doc
+
+## Installed python
+
+src: https://opensource.com/article/20/4/install-python-linux
+
+download archive from official source: https://www.python.org/downloads/release/python-395/
