@@ -1,8 +1,12 @@
 #!/bin/bash
+# Not putting `set -x` intentionally here coz it prints if condition then too.
 if  [ $# -eq 0 ]
 then
-  code .
+set -x
+  code -r .
+# Here -r means to use existing window to open the desired file/folder, yikes!!
 else
+set -x
   code $*
 fi
 
