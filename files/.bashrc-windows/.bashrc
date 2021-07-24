@@ -15,6 +15,7 @@ alias .bashrc-edit='code ~/.bashrc'
 alias ..='cd ..'
 alias gl='git log'
 alias gd='git diff'
+alias gch='git checkout'
 
 greeting () {
   echo "Hello $1"
