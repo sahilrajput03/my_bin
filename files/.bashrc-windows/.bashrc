@@ -24,6 +24,7 @@ greeting () {
   echo "Hello $1"
 }
 
+# Usage: gac life is amazing.
 gac () {
     echo + git add .
     git add .
@@ -32,12 +33,13 @@ gac () {
     git commit -m "$*" # gac life is amazing
 }
 
+# Usage: gacp life is super amazing.
 gacp () {
     echo + git add .
     git add .
     
     echo + git commit -m \'$@\'
-    git commit -m "$*" # gac life is amazing
+    git commit -m "$*"
 
     echo + git push
     git push
