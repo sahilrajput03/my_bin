@@ -1,6 +1,6 @@
 // prettier.config.js or .prettierrc.js
 module.exports = {
-	printWidth: 80,
+	// printWidth: 80,
 	requirePragma: false,
 	// ^ That is defautl false though. Read about it @ https://prettier.io/docs/en/options.html#insert-pragma
 	trailingComma: 'es5',
