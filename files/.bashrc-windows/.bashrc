@@ -16,6 +16,8 @@ alias ..='cd ..'
 alias gl='git log'
 alias gd='git diff'
 alias gch='git checkout'
+alias node12='nvm use 12.19.0'
+alias node14='nvm use 14.15.5'
 
 greeting () {
   echo "Hello $1"
