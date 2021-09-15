@@ -18,6 +18,9 @@ alias gd='git diff'
 alias gch='git checkout'
 alias node12='nvm use 12.19.0'
 alias node14='nvm use 14.15.5'
+alias cdadminpanel='cd /c/Users/Dell/OneDrive/Documents/bspaces-admin--coreui && clear'
+alias cdapi-bspaces='cd /c/Users/Dell/OneDrive/Documents/bspaces-api'
+alias cos='co . && s'
 
 greeting () {
   echo "Hello $1"
