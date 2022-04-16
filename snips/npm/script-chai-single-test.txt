@@ -1,1 +1,0 @@
-"testSingle": "npx mocha --exit -g"

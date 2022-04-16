@@ -1,0 +1,12 @@
+#!/bin/bash
+#### THIS IS old fashioned coz now we can use degit utility to do this:
+fetcher --alwaysUseAuth --file="~/gitf_config.json" --url=$*
+# https://github.com/Gyumeijie/github-files-fetcher#authentication
+# Using --alwaysUseAuth coz: https://github.com/Gyumeijie/github-files-fetcher#behavior
+# *IMPORTANT: CONFIG FILE IS SAVED @ ~/gitf_config.json
+
+
+#
+#TIP: USING `gitf`: You can use fetcher i.e., npm package: `npm install -g github-files-fetcher` and have defined a bash 
+# script for it in additionalPath, i.e., gitf stands for gitfile or gitfolder, it can clone file/folder
+# and repositories in .zip format.

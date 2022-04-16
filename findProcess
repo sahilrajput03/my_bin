@@ -1,4 +1,0 @@
-#!/bin/bash
-echo "🔥︎ TIP: Simply use '''kill <process_id>''' to kill a process. ~sahil"
-#set -x
-ps aux | grep --color $@

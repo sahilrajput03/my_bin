@@ -1,4 +1,0 @@
-#!/bin/bash
-set -x
-echo FYI: The 'pull' command is fetch+merge.
-git fetch --all

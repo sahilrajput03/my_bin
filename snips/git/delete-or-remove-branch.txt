@@ -1,1 +1,0 @@
-git branch -d branchName #Use -D for non merged branches.

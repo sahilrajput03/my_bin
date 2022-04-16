@@ -1,2 +1,0 @@
-$var = new \Models\;
-<<-1

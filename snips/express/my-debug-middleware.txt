@@ -1,5 +1,0 @@
-app.use((req, res, next) => {
-	log(`${req.method} @ ${req.path}`)
-	next()
-})
-

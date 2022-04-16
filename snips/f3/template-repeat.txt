@@ -1,3 +1,0 @@
-<repeat group="{{ @items }}" value="{{ @item }}" counter="{{@count}}">
-    <p>{{ trim(@item) }}</p>
-</repeat>

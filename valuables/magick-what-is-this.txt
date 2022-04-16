@@ -1,0 +1,1 @@
+Visit(it is a image converstion tool IMO): https://imagemagick.org/script/command-line-tools.php#magick

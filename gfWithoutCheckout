@@ -1,4 +1,0 @@
-#!/bin/bash
-#set -x
-echo git fetch . source:target
-echo Here, source is same in style as git merge source, but you get to specify to which branch you want it to get merged using branch specified after colon.

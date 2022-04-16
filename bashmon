@@ -1,3 +1,0 @@
-#!/bin/bash
-/usr/local/bin/nodemon -q -e sh -x "bash $*" #Note, nn is just aliased to /usr/local/bin/nodemon, i.e. original bin installed by npm.
-#bash $*

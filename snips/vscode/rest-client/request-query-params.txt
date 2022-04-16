@@ -1,6 +1,0 @@
-### Request at /my-api
-get http://localhost:8080/my-api?name=Sahil&lastname=Rajput
-
-Content-Type: application/json
-
-{}

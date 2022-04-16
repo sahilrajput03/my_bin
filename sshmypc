@@ -1,3 +1,0 @@
-#!/bin/bash
-sshpass -p $MY_PC_PASSWORD_FOR_SSH ssh sahil@192.168.18.17
-#echo $MY_PC_PASSWORD_FOR_SSH 			#Fortesting

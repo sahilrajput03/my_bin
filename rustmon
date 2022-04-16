@@ -1,4 +1,0 @@
-#!/bin/bash
-set -x
-t=${*%???}
-/usr/local/bin/nodemon -q -e rs -x "rustc $* -o .binary && ./.binary"

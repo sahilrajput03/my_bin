@@ -1,3 +1,0 @@
-#!/bin/bash
-set -x
-heroku rollback $@ -a $heroku_app

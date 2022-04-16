@@ -1,2 +1,0 @@
-$var = new \Controllers\;
-<<-1

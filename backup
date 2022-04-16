@@ -1,8 +1,5 @@
 #!/bin/bash
 set -x
-backupGitConfig
 backupi3ConfigFile
-backupNanoRc
-backupVimRc
 backupXmodmap
 backupFishConfigFolder
