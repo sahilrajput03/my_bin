@@ -1,7 +1,0 @@
-#!/bin/bash
-echo Tip: Use \`rs\` to manually restart the parcel dev server when you add/remove html/css/js files 🥝︎🥝︎.
-set -x
-# I am using nodemon coz i am a dev and anytime i would need to debug anything that goes bad with parcel dev server, and the best way to debug is to jump in to live executing code servers, 🧸︎yikes🧸︎!
-# Also another benefit of using nodemon is anytime you add/remove a .html file from the directory you are running run_parcel binary, you just need to type ``rs`` to restart the server with updated files, yikes!!!
-# I am watching file _run_parcel file so that if i make changes to _run_parcel script, the already running script will simply reexecute so that new changes would take effect right away.
-/usr/local/bin/nodemon -q -x _run_parcel --watch /home/array/my_bin/parcel-dev/_run_parcel
